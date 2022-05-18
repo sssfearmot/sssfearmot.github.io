@@ -1,0 +1,52 @@
+.basic01 {
+    padding: 0;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.basic01 h2 {
+    font-size: 21px;
+    font-weight: bold;
+    margin: 0 0 20px 0;
+}
+
+.basic01 p { 
+    font-size: 15px;
+    margin: 0 0 30px 0;
+}
+
+.basic01 .container {
+    display: flex;
+    gap: 30px;
+    padding: 0%;
+    /*width: 1200px;*/
+    background: #ddd;
+}
+
+.basic01 .container img {
+    width: 100%;
+}
+
+.basic01 figure {
+    flex: 1;
+}
+
+.basic02 .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    /*gap: 30px;
+    padding: 0%;
+    width: 1200px;*/
+    background: #ddd;
+}
+
+.basic02 hr {
+    margin: 10px 0;
+}
+
+.basic02 figure {
+    flex: 1;
+}
