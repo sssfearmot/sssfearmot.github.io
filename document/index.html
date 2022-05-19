@@ -14,7 +14,7 @@
 
         strong {
             display: block;
-            color: #f00;
+            color: #000;
         }
 
         a {
@@ -23,11 +23,14 @@
         }
 
         pre {
+            margin-left: 40px;
             font-weight: 100;
         }
     </style>
 </head>
 <body>
+
+    <h2>display</h2>
     <ol>
         <li>
             <!-- 
@@ -56,21 +59,44 @@
             <a href="./doc/box03.html" target="_blank">box 03</a>
 
             <p>박스 나열</p>
-            <pre>display : flex 박스를 가로로 나열</pre>
-            <pre>(figure 태그) 삽화나 다이어그램, 사진 등과 같이 문서의 주요 흐름과 독립적인 콘텐츠를 정의</pre>
+            <pre>display : flex 박스를 가로로 나열<br>(figure 태그) 삽화나 다이어그램, 사진 등과 같이 문서의 주요 흐름과 독립적인 콘텐츠를 정의</pre>
             <em>2022.05.17</em>
-            <strong>아주 중요</strong>
+            <strong>display, flex, figure</strong>
         </li>
 
         <li>
             <a href="./doc/box04.html" target="_blank">box 04</a>
             
             <p>박스 배열</p>
-            <pre>레이아웃의 기초 박스의 위치변경. display flex를 이용한 박스 배열</pre>
-            <pre>justify-content 박스의 위치를 변경</pre>
-            <pre>(header 태그) 문서나 특정 섹션의 헤더를 정의</pre>
+            <pre>레이아웃의 기초 박스의 위치변경. display flex를 이용한 박스 배열<br>justify-content 박스의 위치를 변경<br>(header 태그) 문서나 특정 섹션의 헤더를 정의</pre>
+
             <em>2022.05.18</em>
-            <strong>아주 중요</strong>
+            <strong>justify-content, header</strong>
+        </li>
+    </ol>
+
+    <h2>position</h2>
+    <ol>
+        <li>
+            <a href="./doc/position01.html" target="_blank">position01</a>
+
+            <p>absolute 활용</p>
+            <pre>absolute 속성값은 브라우저가 문서의 흐름과 상관없이 left, right, top, bottom 속성값을 이용하여 요소를 위치시키는 속성값<br>+ 부모 엘리먼트 위에 겹쳐서 배치 가능<br>transform은 두번 쓰지 않는다<br>transform은 회전, 크기 조절, 기울이기, 이동 효과 등을 부여할 때 사용
+            </pre>
+            <em>2022.05.19</em>
+            <strong>position, absolute, transform</strong>
+            
+        </li>
+
+        <li>
+            <a href="./doc/position02.html" target="_blank">position02</a>
+
+            <p>fixed 활용</p>
+            <pre>fixed는 브라우저 창을 어디로 하더라도 계속 고정되어 표시됨(기준점 : 브라우저 왼쪽 위 꼭지점)<br>+ absolute 속성값과 마찬가지로 문서의 흐름과 상관없이 위치를 좌표로 결정<br>transition은 CSS 속성을 변경할 때 두 가지 상태 사이에 일어나는 변화(애니메이션)를 커스터마이징 할 때 사용<br>+ 속성 변경이 즉시 영향을 미치게 하는 대신, 그 속성의 변화가 일정 기간에 걸쳐 일어나도록 하는 것
+            </pre>
+            <em>2022.05.19</em>
+            <strong>position, fixed, transition</strong>
+            
         </li>
     </ol>
     
