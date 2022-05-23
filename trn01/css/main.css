@@ -19,13 +19,13 @@
 }
 .content strong { /* inline은 아래 위로 margin 안 먹음*/
     display: block; /* 그럴때 박스로 만듬 */
-    font-weight: 17px;
+    font-size: 17px;
     font-weight: 700;
     margin: 0 0 10px 0;
 }
 
 .content p {
-    font-weight: 15px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.4;
 }
