@@ -1,31 +1,142 @@
-.content {
-    padding: 100px 0;
+:root { /* IE에서는 안 돌아감 */
+    --red :#dc3545; /* bootstrap = 웹사이트 개발 프레임워크 */
+    --gc: #dddddd;
+    --wc: #f8f9fa;
+    --dc: #000;
 }
 
-.content .container {
+html {
+    font-size: 20px;
+}
+
+body {
+    font-size: 0.8rem;
+}
+
+/* rem = 기준이 되는 값을 지정된 배수로 변환해 표현한 크기
+여기서 기준이 되는 값은 최상위 요소(보통은 html 태그)에서 지정된 font-size 값
+ex. html 태그의 font-size 값이 16px 라면 2rem은 32px을 의미 
+
+html { font-size: 16px; }
+div { 
+	font-size: 1.5rem; (24px)
+	margin: 2rem (32px)
+	padding: 1.25rem (20px)
+} 
+*/
+
+.wrap {
+
+}
+
+.top_banner {
+    border-top: 2px solid var(--red); /*상단에 줄 넣기 + 색 추가*/
+    border-bottom: 1px solid var(--gc);
+    font-size: 0.65rem;
+    line-height: 1.5rem;
+}
+
+.top_banner .container {
     display: flex;
-    gap: 30px; /*공간 사이를 띄우는 것*/
+    justify-content: flex-end; /*오른쪽으로 배치*/
+    width: 60rem;
+    margin: 0 auto;
+}
+
+.top_banner li {
+    border-right: 1px solid var(--gc);
+    padding: 0 0.5rem;
+}
+
+.header {
+    line-height: 5rem;
+}
+
+.header .container {
+    display: flex;
     width: 1200px;
     margin: 0 auto;
 }
 
-.content .container figure {
-    flex: 1;
+.header h1 img {
+    width: 300px;
 }
 
-.content img {
+.header nav {
+    margin: 0 0 0 auto;
+}
+
+.header nav>ul {
+    display: flex;
+    gap: 1.8rem;
+}
+
+.header nav>ul a {
+    display: block;
+    font-size: 0.85rem;
+}
+
+.header nav>ul>li {
+    position: relative;
+}
+
+.header nav>ul>li~li::before { /* ~는 형제를 나타냄 */
+    content: "";
+    position: absolute;
+    inset: 50% auto auto -1rem; 
+    /* 상하좌우값을 지정해 줄 수 있는 css 속성 */
+    /* inset: 10px 20px 30px 40px;처럼 상하좌우를 전부 지정할 수도 있고.
+    inset: 60px;으로만 하면 상하 좌우값이 동일하게 60이 된다.*/
+    width: 1px;
+    height: 0.6rem;
+    background: var(--gc);
+    transform: translateY(-50%);
+}
+
+.header i {
+    font-size: 1.25rem;
+    padding: 0.25rem;
+    background: var(--gc);
+    border-radius: 3px;
+    margin: 0 0 0 1rem;
+    vertical-align: middle;
+}
+
+.main_visual {
+    position: relative;
+}
+
+.main_visual .main_slider img {
     width: 100%;
-    margin: 0 0 20px 0;
-}
-.content strong { /* inline은 아래 위로 margin 안 먹음*/
-    display: block; /* 그럴때 박스로 만듬 */
-    font-size: 17px;
-    font-weight: 700;
-    margin: 0 0 10px 0;
 }
 
-.content p {
-    font-size: 15px;
+.main_visual .slogan {
+    position: absolute;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    text-align: right;
+    color: var(--wc);
+    text-shadow: 0 0 2px var(--dc); /* text-shadow = 텍스트 그림자 적용 */
+}
+
+.main_visual .slogan h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0 0 2rem 0;
+}
+
+.main_visual .slogan h2::after {
+    content: "";
+    display: block;
+    width: 4rem;
+    height: 2px;
+    background: var(--wc);
+    margin: 1rem 0 0 auto;
+}
+
+.main_visual .slogan p {
+    font-size: 0.75rem;
     font-weight: 300;
     line-height: 1.4;
 }
