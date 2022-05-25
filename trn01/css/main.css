@@ -140,3 +140,42 @@ div {
     font-weight: 300;
     line-height: 1.4;
 }
+
+.main_visual figure {
+    height: 30rem;
+}
+
+.main_visual .item01 {
+    background: url(../img/main_bg01.jpg) no-repeat center center/100%;
+}
+
+.main_visual .item01.on {
+    background: url(../img/main_bg01.jpg) no-repeat center center/150%;
+    transition: 2s;
+}
+
+.main_visual .item02 {
+    background: url(../img/main_bg02.jpg) no-repeat center center/100%;
+}
+
+.main_visual .item02.on {
+    background: url(../img/main_bg02.jpg) no-repeat center center/150%;
+    transition: 2s;
+}
+
+.main_visual .item03 {
+    background: url(../img/main_bg03.jpg) no-repeat center center/100%;
+}
+
+.main_visual .item03.on {
+    background: url(../img/main_bg03.jpg) no-repeat center center/150%;
+    transition: 2s;
+}
+
+/*.test_bg {
+    background: #f00 url(../img/main_banner01.jpg) no-repeat fixed center 
+    center /cover; /*background 공식 center center = background x y
+    
+    height: 300px;
+    margin-bottom: 1000px;
+}*/
