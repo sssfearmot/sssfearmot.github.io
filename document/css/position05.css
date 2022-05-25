@@ -1,0 +1,75 @@
+.smile {
+    background-color: yellow;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    border-radius: 50%;
+    left: 25%;
+    top: 80px;
+}
+
+.mouth {
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 1px;
+    top: 400px;
+    left: 200px;
+    transform: rotate(40deg);
+}
+
+.smile .l_eyes:hover {
+    transform: rotateY(180deg);
+}
+
+.mouth2 {
+    position: absolute;
+    background-color: black;
+    width: 50px;
+    height: 1px;
+    top: 400px;
+    left: 240px;
+    transform: rotate(-40deg);
+}
+
+.l_eyes {
+    position: absolute;
+    border-left: 45px;
+    background-color: black;
+    width: 52px;
+    height: 1px;
+    top: 100px;
+    left: 120px;
+    transform: rotate(-40deg);
+}
+
+.l_eyes2 {
+    position: absolute;
+    border-left: 45px;
+    background-color: black;
+    width: 52px;
+    height: 1px;
+    top: 100px;
+    left: 160px;
+    transform: rotate(40deg);
+}
+
+.r_eyes {
+    position: absolute;
+    background-color: black;
+    width: 52px;
+    height: 1px;
+    top: 100px;
+    left: 260px;
+    transform: rotate(-40deg);
+}
+
+.r_eyes2 {
+    position: absolute;
+    background-color: black;
+    width: 52px;
+    height: 1px;
+    top: 100px;
+    left: 300px;
+    transform: rotate(40deg);
+}
