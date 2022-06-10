@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+/*폰트 불러오기*/
+@import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/*아이콘 불러오기*/
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#event { /* id 호출할떄는 # */
+    padding: 100px 0;
+    text-align: center;
+}
+
+#event i {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+#event h2 {
+    font-size: 21px;
+    /*홀수일때 가독성이 좋음*/
+    font-weight: 700;
+    margin: 0 0 10px 0;;
+}
+
+#event h2::before {
+    /*가상 공간을 만들어주는 것*/
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    margin: 0 10px;
+    vertical-align:middle;
+}
+
+#event h2::after {
+    content: "";
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background: #000;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+#event p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 30px 0;
+    line-height: 1.4;
+}
+
+#event .container {
+    display: flex;
+    gap: 30px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#event img {
+    max-width: 100%;
+    transition: 0.5s;
+}
+
+#event figure {
+    position: relative;
+    flex: 1;
+    /* 사진 균등하게 배치 */
+    overflow:hidden;
+    /* overflow = 박스 밖으로 넘치는걸 없앰 */
+}
+
+#event .container figure:hover img {
+    /* hover = 마우스를 위에 올렸을떄 반응 */
+    /* figure 사용시 따로 */
+    transform: scale(2);
+    /* scale = 크기 */
+}
+
+#event figure a {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    padding: 10px 30px;
+    background: #333;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#event figure:hover a {
+    top: 0;
+}
+
+#event .bar {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 100px;
+    background: #000;
+    margin: 30px;
+    vertical-align:middle;
+}
+
+.test {
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.test3 {
+    text-align:left;
+}

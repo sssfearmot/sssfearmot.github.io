@@ -1,0 +1,15 @@
+.popup {
+    position: absolute; /*position, top, left, transform 공식, 기준은 position*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*transform은 두번 쓰지 않는다*/
+    width: 450px;
+    height: 350px;
+    background: rgb(0, 173, 43);
+}
+
+.popup button {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}

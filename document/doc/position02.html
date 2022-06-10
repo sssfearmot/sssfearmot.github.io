@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position02</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/position02.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">menu01</a></li>
+            <li><a href="">menu02</a></li>
+            <li><a href="">menu03</a></li>
+            <li><a href="">menu04</a></li>
+            <li><a href="">menu05</a></li>
+            <li><a href="">menu06</a></li>
+        </ul>
+    </nav>
+
+    <div class="mpoen">
+        <span></span><span></span><span></span><span></span>
+    </div>
+    <script>
+        document.querySelector('.mpoen').addEventListener('click', function(){
+            document.querySelector('nav').classList.toggle('on');
+            this.classList.toggle('on');
+        });
+    </script>
+
+    <main>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro, explicabo. Voluptas iusto maxime saepe qui. Corporis, expedita! Libero nulla impedit cum consequuntur facere quae, fugiat, eaque possimus aspernatur suscipit cupiditate architecto at nostrum, velit tempore recusandae dolores ducimus? Dicta obcaecati possimus corrupti, recusandae numquam vero quasi et. Cupiditate amet architecto tenetur, minus eos numquam magni? Corrupti voluptate doloribus, voluptas voluptatum reprehenderit ipsa ipsam fugiat harum aut molestiae rem eius rerum? Consectetur expedita qui quasi est. Omnis ea enim fuga veniam quasi nihil neque laboriosam et accusamus exercitationem. Mollitia autem alias vel a dolorum voluptate, eius libero vitae nulla quam eos.</main>
+</body>
+</html>

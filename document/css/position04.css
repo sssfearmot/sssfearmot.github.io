@@ -1,0 +1,30 @@
+body {
+    background: #333;
+}
+
+.sinbal {
+    padding: 100px 0;
+}
+
+.sinbal>.case {
+    position: relative;
+    width: 809px;
+    height: 450px; /*흐름에서 밖으로 나오는 경우 지정*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.sinbal .case ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 3s;
+}
+
+.num {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    color: #fff;
+    font-size: 30px;
+}

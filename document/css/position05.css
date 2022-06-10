@@ -1,0 +1,52 @@
+body {
+    background: #ff0;
+}
+
+.smile {
+    position: absolute;
+    /* position: relative, absolute, fixed 모두 기준이 된다 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: #f00;
+    border-radius: 50%;
+}
+
+.smile > li {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.smile.on > li {
+    transform: rotate(225deg);
+}
+
+.smile>li:nth-child(1) {
+    top: 200px;
+    left: 100px;
+}
+
+.smile>li:nth-child(2) {
+    top: 200px;
+    right: 100px;
+}
+
+.smile>li:nth-child(3) {
+    bottom: 100px;
+    left: 215px;
+}
+
+.top_banner .container {
+ transition: 0.5s;
+}
+
+.top_banner .container.on {
+    height: 0;
+    overflow: hidden;
+}

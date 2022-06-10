@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .sticky {
+            position: sticky;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+            line-height: 100vh;
+        }
+
+        header {
+            background: #f00;
+        }
+
+        main {
+            background: #0f0;
+        }
+
+        footer {
+            background: #00f;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .container figure {
+            flex: 1;
+            line-height: 1.4;
+        }
+
+        .container figure:nth-child(2) {
+            background: #333;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="sticky">
+        header
+    </header>
+
+    <main class="sticky">
+
+        <section class="sticky">
+            <div class="container">
+                <figure>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque exercitationem magni in consectetur
+                    suscipit eveniet beatae qui. Officiis ex maiores libero delectus nostrum quam amet modi voluptatem.
+                    Perferendis id eos magni dolor aliquam excepturi impedit. Pariatur praesentium minima cumque
+                    architecto
+                    sint, atque dolore cum modi odio ea, saepe provident esse alias nulla impedit similique eligendi?
+                    Dolorum odit aliquam quod amet minus incidunt nulla quaerat quia aperiam. Ipsa quo velit nam
+                    consequuntur, nostrum, animi error totam soluta consequatur porro in corrupti est dicta voluptas.
+                    Dignissimos pariatur ullam aperiam corporis error, sit nihil fugit incidunt ab est laborum excepturi
+                    beatae, perspiciatis optio?
+                </figure>
+                <figure>
+
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="sticky">
+        footer
+    </footer>
+
+</body>
+
+</html>
