@@ -100,3 +100,29 @@
 .menubars08 {
     display: none;
 }
+
+
+#check-btn09 {
+    display: none;
+}
+
+#check-btn09:checked~.menubars09 {
+    display: block;
+}
+
+.menubars09 {
+    display: none;
+}
+
+
+#check-btn10 {
+    display: none;
+}
+
+#check-btn10:checked~.menubars10 {
+    display: block;
+}
+
+.menubars10 {
+    display: none;
+}
