@@ -421,28 +421,72 @@
     border-radius: 50%;
 }
 
-.fixedBg2 {
+.service {
+    padding: 100px 0;
+}
+
+.service .container {
+    gap: 30px;
+}
+
+.service .container>div {
+    flex: 1;
+}
+
+.service .container .case {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.service .container iframe {
+    position:  absolute;
+    inset: 0 0 0 0;
+}
+
+.service .container .root_daum_roughmap {
+    position: absolute;
+    inset: 0 0 0 0;
+    width: 100%;
+}
+
+.service .container .root_daum_roughmap .Wrap_map {
+    height: 100%;
+}
+
+.utb {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/mainvisual01.jpg) no-repeat fixed center center/cover;
+    filter: grayscale(1);
 }
 
-.fixedBg2 h2 {
+.utb h2 {
     margin: 0 0 10px 0;
     font-size: 19px;
     font-weight: 700;
 }
 
-.fixedBg2 p {
+.utb p {
     margin: 0 0 30px 0;
     font-size: 15px;
     font-weight: 300;
 }
 
-.fixedBg2 i {
+.utb i {
     padding: 5px;
     background: #f00;
     vertical-align: -10%;
     border-radius: 50%;
+}
+
+.scrollMe {
+    padding: 200px 0;
+}
+
+.scrollMe .container {
+    gap: 70px;
+}
+
+.scrollMe .container figure {
+    flex: 1;
 }
