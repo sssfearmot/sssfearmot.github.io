@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML BASIC</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>MAIN INDEX</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 
 
 <body>
-    <h1>HTML BASIC</h1>
+    <h1>MAIN INDEX</h1>
     <hr>
     <input id="check-btn01" type="checkbox" />
     <label for="check-btn01">
@@ -19,16 +19,22 @@
     </label>
     <ul class="menubars01">
         <li>
-            <a href="./doc/box01.html" target="_blank">기본 박스 01</a>
+            <a href="./html_run/doc/box01.html" target="_blank">기본 박스 01</a>
             <p>기본적인 박스의 성질 width height padding margin</p>
             <pre>인라인 스타일 : HTML 요소 내부에 style 속성을 사용하여 CSS 스타일을 적용하는 방법<br>내부 스타일 시트 : HTML 문서 내의 head 태그에 style 태그를 사용하여 CSS 스타일을 적용<br>외부 스타일 시트 : 웹 사이트 전체의 스타일을 하나의 파일에서 변경할 수 있도록 해줌
             <br>
         </li>
         <li>
-            <a href="./doc/box02.html" target="_blank">기본 박스 02</a>
+            <a href="./html_run/doc/box02.html" target="_blank">기본 박스 02</a>
             <p>선택자에 대한 이해</p>
             <pre>input : 웹 기반 양식에서 사용자의 데이터를 받을 수 있는 대화형 컨트롤을 생성 <a href="https://developer.mozilla.org/ko/docs/Web/HTML/Element/Input" target="_blank">input 유형</a></pre>
-
+        </li>
+        <li>
+            <a href="./document/doc/box01.html" target="_blank">기본 박스 01-1</a><br>
+            <a href="./document/doc/box01.html" target="_blank">기본 박스 01-1</a><br>
+            <a href="./document/doc/box02.html" target="_blank">기본 박스 01-2</a><br>
+            <a href="./document/doc/box03.html" target="_blank">기본 박스 01-3</a><br>
+            <a href="./document/doc/box04.html" target="_blank">기본 박스 01-4</a>
         </li>
     </ul>
 
@@ -39,23 +45,28 @@
     </label>
     <ul class="menubars02">
         <li>
-            <a href="./doc/test01.html" target="_blank">다단 메뉴01</a>
+            <a href="./html_run/doc/test01.html" target="_blank">다단 메뉴01</a>
             <p>test01</p>
             <pre>overflow : 요소의 박스에 내용이 더 길 때 어떻게 보일지 선택하는 속성<br>+ visible 기본값으로 내용이 더 길어도 그대로 보임 <br>+ hidden 내용이 넘치면 자름. 자른 부분은 보이지 않음, <br>+ scroll 내용이 넘치지 않아도 항상 스크롤바가 보임, <br>+ auto 내용이 잘릴 때만 스크롤바가 보임</pre>
             <br>
             <pre>z-index : 어느 객체가 앞으로 나오고, 뒤에 나올지 배치 순서를 결정하는 속성. <br>+ position (relative, absolute, fixed) 속성이 적용된 요소에서만 작동. <br>+ auto 기본값으로 z-index를 지정하지 않은 것과 같음 <br>+ number 배치 순서를 결정, 숫자가 낮을수록 뒤에 배치되며 숫자가 높을수록 앞에 나옴 (음수도 가능) <br>+ initial 기본값으로 설정</pre>
         </li>
         <li>
-            <a href="./doc/multi_menu01.html" target="_blank">다단 메뉴02</a>
+            <a href="./html_run/doc/multi_menu01.html" target="_blank">다단 메뉴02</a>
             <p>multi_menu01</p>
             <pre>::before - 실제 내용 바로 앞에서 생성되는 자식요소 <br>::after - 실제 내용 뒤에서 생성되는 자식요소 <br>+ ::before와 ::after를 쓸 땐 content라는 속성이 꼭 필요함 
             </pre>
         </li>
         <li>
-            <a href="./doc/multi_menu02.html" target="_blank">다단 메뉴03</a>
+            <a href="./html_run/doc/multi_menu02.html" target="_blank">다단 메뉴03</a>
             <p>multi_menu02</p>
         </li>
+        <li>
+            <a href="./html_run/doc/multi_menu03.html" target="_blank">다단 메뉴04</a>
+            <p>multi_menu03</p>
+        </li>
     </ul>
+
     <hr>
     <input id="check-btn03" type="checkbox" />
     <label for="check-btn03">
@@ -63,7 +74,7 @@
     </label>
     <ul class="menubars03">
         <li>
-            <a href="./doc/display01.html" target="_blank">디스플레이01</a>
+            <a href="./html_run/doc/display01.html" target="_blank">디스플레이01</a>
             <p>display01</p>
             <pre>inline은 width, height 속성을 지정해도 무시된다.<br>+ margin, padding 속성은 좌우 간격만 반영이 되고, 상하 간격은 반영이 되지 않는다. </pre>
         </li>
@@ -76,24 +87,31 @@
     </label>
     <ul class="menubars04">
         <li>
-            <a href="./doc/position01.html" target="_blank">포지션01</a>
+            <a href="./html_run/doc/position01.html" target="_blank">포지션01</a>
             <p>position01</p>
             <pre>position:static을 제외한 나머지 속성값들은 top, left, right, bottom  와 같이 어느 위치에 요소를 위치시킬 건지 지정할 수 있다.<br>+ static은 position 속성의 기본값, 요소를 문서 흐름에 맞추어 배치<br>+ relative 이전 요소(주로 부모 요소)에 자연스럽게 연결하여 위치를 지정<br>+ absolute 원하는 위치를 지정해 배치<br>+ fixed 지정한 위치에 고정하여 배치<br>+ sticky 위치에 따라서 동작방식이 달라짐.</pre>
         </li>
         <li>
-            <a href="./doc/position02.html" target="_blank">포지션02</a>
+            <a href="./html_run/doc/position02.html" target="_blank">포지션02</a>
             <p>position02</p>
 
         </li>
         <li>
-            <a href="./doc/position03.html" target="_blank">포지션03</a>
+            <a href="./html_run/doc/position03.html" target="_blank">포지션03</a>
             <p>position03</p>
 
         </li>
         <li>
-            <a href="./doc/hover01.html" target="_blank">포지션04</a>
+            <a href="./html_run/doc/hover01.html" target="_blank">포지션04</a>
             <p>hover01</p>
-
+        </li>
+        <li>
+            <a href="./document/doc/position01.html" target="_blank">포지션01-1</a><br>
+            <a href="./document/doc/position02.html" target="_blank">포지션01-2</a><br>
+            <a href="./document/doc/position03.html" target="_blank">포지션01-3</a><br>
+            <a href="./document/doc/position04.html" target="_blank">포지션01-4</a><br>
+            <a href="./document/doc/position05.html" target="_blank">포지션01-5</a><br>
+            <a href="./document/doc/position06.html" target="_blank">포지션01-6</a>
         </li>
     </ul>
     <hr>
@@ -103,7 +121,7 @@
     </label>
     <ul class="menubars05">
         <li>
-            <a href="./doc/pseudo_element01.html" target="_blank">pseudo_element</a>
+            <a href="./html_run/doc/pseudo_element01.html" target="_blank">pseudo_element</a>
             <p>pseudo_element01</p>
             <pre>nth-child() 속성<br>+ 홀수번째 엘리먼트에 적용 : nth-child(odd)<br>+ 짝수번째 엘리먼트에 적용 : nth-child(even)<br>+ 2n번째에 해당하는 엘리먼트 : nth-child(2n)</pre>
             <br>
@@ -119,16 +137,16 @@
     </label>
     <ul class="menubars06">
         <li>
-            <a href="./doc/psdtohtml01.html" target="_blank">PSD 01</a>
+            <a href="./html_run/doc/psdtohtml01.html" target="_blank">PSD 01</a>
             <p>psd to html 01</p>
-            <img src="./img/project01.jpg" alt="" width="900" height="400">
+            <img src="./html_run/img/project01.jpg" alt="" width="900" height="400">
         </li>
 
 
         <li>
-            <a href="./doc/psdtohtml02.html" target="_blank">PSD 02</a>
+            <a href="./html_run/doc/psdtohtml02.html" target="_blank">PSD 02</a>
             <p>psd to html 02</p>
-            <img src="./img/Untitled-1_01.jpg" alt="" width="900" height="500">
+            <img src="./html_run/img/Untitled-1_01.jpg" alt="" width="900" height="500">
         </li>
     </ul>
 
@@ -139,25 +157,112 @@
     </label>
     <ul class="menubars07">
         <li>
-            <a href="./doc/header01.html" target="_blank">header 01</a>
+            <a href="./html_run/doc/header01.html" target="_blank">header 01</a>
         </li>
         <li>
-            <a href="./doc/header02.html" target="_blank">header 02</a>
+            <a href="./html_run/doc/header02.html" target="_blank">header 02</a>
         </li>
         <li>
-            <a href="./doc/header03.html" target="_blank">header 03</a>
+            <a href="./html_run/doc/header03.html" target="_blank">header 03</a>
         </li>
         <li>
-            <a href="./doc/header04.html" target="_blank">header 04</a>
+            <a href="./html_run/doc/header04.html" target="_blank">header 04</a>
         </li>
         <li>
-            <a href="./doc/header05.html" target="_blank">header 05</a>
+            <a href="./html_run/doc/header05.html" target="_blank">header 05</a>
         </li>
         <pre>justify-content : 가로 축을 기준으로 좌우에 대한 정렬을 관장<br>+ flex-start 요소들을 컨테이너의 왼쪽으로 정렬<br>+ flex-end 컨테이너의 우측으로 정렬<br>+ center 컨테이너의 중앙으로 정렬<br>+ space-between 요소들 사이에 동일한 간격을 둔다<br>+ space-around 요소들 주위에 동일한 간격을 둔다</pre>
         <br>
         <pre>text-align : block 요소 안에 있는 inline 요소를 정렬<br>+ left 왼쪽 정렬<br>+ right 오른쪽 정렬<br>+ center 중앙 정렬<br>+ justify 왼쪽과 오른쪽 열에 맞추어 화면을 늘어뜨림
         <br>*주의사항*<br>1. block 요소에만 text-align 속성을 적용할 수 있다.<br>2. 정렬되는 것은 block 요소 안에 있는 inline 요소만 가능<br>3. 2번에서 inline 요소란 text뿐 아니라 이미지 등도 포함</pre>
         <pre>inline 요소 : 줄 속에 끼워 넣는 요소<br>ex) span, b, a, img 태그 등<br>block 요소 : 해당 요소가 속한 줄은 가로 화면 전체 100%를 차지<br>ex) p, div, ol, ul, table 등 </pre>
+    </ul>
+
+    <hr>
+    <input id="check-btn08" type="checkbox" />
+    <label for="check-btn08">
+        <h2>슬라이더 : slick</h2>
+    </label>
+    <ul class="menubars08">
+        <li>
+            <a href="./html_run/doc/slick01.html" target="_blank">slick01</a>
+        </li>
+        <li>
+            <a href="./html_run/doc/slick02.html" target="_blank">slick02</a>
+        </li>
+        <li>
+            <a href="./html_run/doc/slick03.html" target="_blank">slick03</a>
+        </li>
+        <br>
+        <a href="https://github.com/kenwheeler/slick/" target="_blank">
+            slick : github
+        </a>
+        <br>
+        <a href="http://kenwheeler.github.io/slick/" target="_blank">
+            slick : Demo
+        </a>
+
+
+        <pre>slide: 'div' //슬라이드 되어야 할 태그 ex) div, li <br>infinite: true //무한 반복 옵션<br>slidesToShow: 4 // 한 화면에 보여질 컨텐츠 개수<br>slidesToScroll: 1 // 스크롤 한번에 움직일 컨텐츠 개수<br>speed: 100 //다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)<br>arrow: true // 옆으로 이동하는 화살표 표시 여부<br>dots: true // 스크롤바 아래 점으로 페이지네이션 여부<br>autoplay: true // 자동 스크롤 사용 여부<br>autoplaySpeed: 10000 // 자동 스크롤 시 다음으로 넘어가는데 걸리는 시간(ms)<br>pauseOnHover: true // 슬라이드 이동 시 마우스 호버하면 슬라이더 멈추게 설정<br>vertical: false // 세로 방향 슬라이드 옵션<br>prevArrow // 이전 화살표 모양 설정<br>nextArrow //다음 화살표 모양 설정<br>dotsClass // 아래 나오는 페이지네이션(점) css class 지정<br>draggable: true // 드래그 가능 여부<br>responsive // 반응형 웹 구현 옵션
+        </pre>
+
+        <li>
+            <a href="./document/doc/slick01.html" target="_blank">slick01-1</a>
+        </li>
+    </ul>
+
+    <hr>
+    <input id="check-btn09" type="checkbox" />
+    <label for="check-btn09">
+        <h2>movie & fullpage</h2>
+    </label>
+    <ul class="menubars09">
+        <li>
+            <a href="./html_run/doc/movie01.html" target="_blank">movie 01</a>
+            <br>
+            <a href="https://github.com/pupunzi/jquery.mb.YTPlayer">YTPlayer : github</a>
+        </li>
+        <br>
+
+
+        <li>
+            <a href="./html_run/doc/fullpage01.html" target="_blank">fullpage 01</a>
+            <br>
+            <a href="https://alvarotrigo.com/fullPage/ko/">fullpage : homepage</a>
+        </li>
+    </ul>
+
+    <hr>
+    <input id="check-btn10" type="checkbox" />
+    <label for="check-btn10">
+        <h2>탭 : tab</h2>
+    </label>
+    <ul class="menubars10">
+        <li>
+            <a href="./html_run/doc/tab01.html" target="_blank">tab 01</a>
+        </li>
+        <li>
+            <a href="./html_run/doc/tab02.html" target="_blank">tab 02</a>
+        </li>
+        <li>
+            <a href="./html_run/doc/tab03.html" target="_blank">tab 03</a>
+        </li>
+    </ul>
+
+    <hr>
+    <input id="check-btn11" type="checkbox" />
+    <label for="check-btn11">
+        <h2>전체 페이지</h2>
+    </label>
+    <ul class="menubars11">
+        <li>
+            <a href="./trn01/index.html" target="_blank">전체 페이지 01</a>
+            <p>DK-steel</p>
+        </li>
+        <li>
+            <a href="./trn02/index.html" target="_blank">전체 페이지 02</a>
+            <p>GRAFF</p>
+        </li>
     </ul>
 
 </body>

@@ -11,9 +11,12 @@
     margin: 0 auto;
 }
 
+/* 20220620 lee topBanner */
+
 .topBanner {
     position: sticky;
     inset: 0 auto auto 0;
+    width: 100%;
     padding: 30px 0;
     background: #f1f1f1;
     z-index: 999;
@@ -87,6 +90,11 @@
     border-bottom: 1px solid #333;
     padding: 5px 0;
 }
+
+/* 
+#searchForm input[type="text"]::placeholder {
+    
+} */
 
 #searchForm input[type="text"]:focus::placeholder {
     opacity: 0;
@@ -204,7 +212,7 @@
 }
 
 .mainVisual .mainSlider .slick-dots li.slick-active button {
-    background: pink;
+    background: hotpink;
     color: #fff;
 }
 
@@ -257,10 +265,7 @@
 }
 
 .mainContent .container {
-    display: flex;
     gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .mainContent .container figure {
@@ -288,7 +293,7 @@
 .mainContent2 {
     padding: 100px 0;
     text-align: center;
-    background: mintcream;
+    background: #f9f9f9;
 }
 
 .mainContent2 h2 {
@@ -305,10 +310,7 @@
 }
 
 .mainContent2 .container {
-    display: flex;
     gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .mainContent2 .container figure {
@@ -352,10 +354,7 @@
 }
 
 .mainContent3 .container {
-    display: flex;
     gap: 30px;
-    width: 1200px;
-    margin: 0 auto;
 }
 
 .mainContent3 .container figure {
@@ -376,15 +375,16 @@
     font-size: 15px;
 }
 
-.mainContent3 .box {
+.mainContent3 figure .box {
     overflow: hidden;
     margin: 0 0 10px 0;
-    transition: border-radius 0.7s;
+    transition: border-radius 0.5s 0.5s;
 }
 
 .mainContent3 figure:hover .box {
     border-radius: 50%;
 }
+
 
 .mainContent3 figure img {
     transition: transform 0.5s;
@@ -416,7 +416,7 @@
 
 .fixedBg i {
     padding: 5px;
-    background: #f00;
+    background: #333;
     vertical-align: -10%;
     border-radius: 50%;
 }
@@ -439,7 +439,7 @@
 }
 
 .service .container iframe {
-    position:  absolute;
+    position: absolute;
     inset: 0 0 0 0;
 }
 
@@ -449,14 +449,14 @@
     width: 100%;
 }
 
-.service .container .root_daum_roughmap .Wrap_map {
+.service .container .root_daum_roughmap .wrap_map {
     height: 100%;
 }
 
 .utb {
     padding: 100px 0;
-    text-align: center;
     color: #fff;
+    text-align: center;
     filter: grayscale(1);
 }
 
@@ -474,8 +474,8 @@
 
 .utb i {
     padding: 5px;
-    background: #f00;
-    vertical-align: -10%;
+    background: #333;
+    vertical-align: 0;
     border-radius: 50%;
 }
 
@@ -492,6 +492,7 @@
 }
 
 .product {
+    position: relative;
     padding: 100px 0;
     text-align: center;
     border-top: 1px solid #ddd;
@@ -508,7 +509,7 @@
     display: block;
     width: 1px;
     height: 50px;
-    background: #f00;
+    background: #ffc0cb;
     margin: 10px auto;
 }
 
@@ -520,25 +521,25 @@
 }
 
 .product .productSlider figure {
-    padding: 0 15px;
+    padding: 40px 15px 0 15px;
     font-size: 13px;
 }
 
-.product .productSlider figure img {
-
-}
 
 .product .productSlider figure.slick-center img {
-    transform: scale(1.2);
+    border: 2px solid #ffc0cb;
+    transform: scale(1.3);
     transition: transform 0.5s;
 }
 
 .product .productSlider .inbox {
     margin: 0 0 10px 0;
-    overflow: hidden;
+
 }
 
 .product .productSlider strong {
+    position: relative;
+    top: -15px;
     display: block;
     margin: 0 0 10px 0;
 }
@@ -563,7 +564,9 @@
 .product .productSlider .slick-dots li button {
     border: none;
     outline: none;
-    background: #f00;
+    background: hotpink;
+    padding: 0;
+    vertical-align: top;
     color: #fff;
     border-radius: 50%;
     width: 20px;
@@ -590,7 +593,7 @@
 }
 
 .product .productArrows i:nth-child(2) {
-    margin: 0 0 0 550;
+    margin: 0 0 0 550px;
 }
 
 .serviceTab {
@@ -603,7 +606,7 @@
 }
 
 .serviceTab .container>div {
-    display: none;
+    flex: 1;
 }
 
 .serviceTab .tab_content>div {
@@ -625,7 +628,7 @@
 }
 
 .serviceTab .tab_menu li.on {
-    background: #f00;
+    background: hotpink;
     color: #fff;
 }
 
@@ -635,18 +638,103 @@
 
 .serviceTab .tab_menu li a {
     display: block;
-    padding: 5px 10px;
+    padding: 10px 15px;
 }
 
 .tab_content .notice a {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    line-height: 25px;
+    border-bottom: 1px solid #000;
 }
 
 .tab_content .notice strong {
-    width: 450px;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
+    min-width: 0;
+    width: 450px;
+}
+
+.right_content li {
+    display: none;
+}
+
+.right_content li.on {
+    display: block;
+}
+
+.right_content li>h2 {
+    line-height: 40px;
+} 
+
+.right_content li>p {
+    line-height: 20px;
+}
+
+.toTop {
+    display: none;
+    position: fixed;
+    inset: auto 50px 50px auto;
+}
+
+.toTop i {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#footer {
+    background: #333;
+    color: #fff;
+    line-height: 80px;
+    font-size: 15px;
+}
+
+#footer .top dt,
+#footer .top dd {
+    display: inline-block;
+}
+
+#footer .top {
+    border-bottom: 1px solid #ddd;
+}
+
+#footer .top dt::before,
+#footer .top dd~dd::before {
+    content: "";
+    display: inline-block;
+    margin: 0 15px;
+    width: 1px;
+    height: 10px;
+    background: #ddd;
+}
+
+#footer .top i {
+    font-size: 25px;
+}
+
+#footer .container {
+    justify-content: space-between;
+}
+
+#footer .bottom address {
+    font-style: normal;
+}
+
+#footer .bottom select {
+    font-size: 12px;
+    text-transform: uppercase;
+    background: transparent;
+    color: #ddd;
+    padding: 0 15px;
+    border: 1px solid #666;
+}
+
+#footer .bottom option {
+    color: #fff;
+    background: #333;
 }

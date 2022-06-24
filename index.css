@@ -1,0 +1,141 @@
+#check-btn01 {
+    display: none;
+}
+
+#check-btn01:checked~.menubars01 {
+    display: block;
+}
+
+.menubars01 {
+    display: none;
+}
+
+
+#check-btn02 {
+    display: none;
+}
+
+#check-btn02:checked~.menubars02 {
+    display: block;
+}
+
+.menubars02 {
+    display: none;
+}
+
+
+#check-btn03 {
+    display: none;
+}
+
+#check-btn03:checked~.menubars03 {
+    display: block;
+}
+
+.menubars03 {
+    display: none;
+}
+
+
+#check-btn04 {
+    display: none;
+}
+
+#check-btn04:checked~.menubars04 {
+    display: block;
+}
+
+.menubars04 {
+    display: none;
+}
+
+
+#check-btn05 {
+    display: none;
+}
+
+#check-btn05:checked~.menubars05 {
+    display: block;
+}
+
+.menubars05 {
+    display: none;
+}
+
+
+#check-btn06 {
+    display: none;
+}
+
+#check-btn06:checked~.menubars06 {
+    display: block;
+}
+
+.menubars06 {
+    display: none;
+}
+
+
+#check-btn07 {
+    display: none;
+}
+
+#check-btn07:checked~.menubars07 {
+    display: block;
+}
+
+.menubars07 {
+    display: none;
+}
+
+
+#check-btn08 {
+    display: none;
+}
+
+#check-btn08:checked~.menubars08 {
+    display: block;
+}
+
+.menubars08 {
+    display: none;
+}
+
+
+#check-btn09 {
+    display: none;
+}
+
+#check-btn09:checked~.menubars09 {
+    display: block;
+}
+
+.menubars09 {
+    display: none;
+}
+
+
+#check-btn10 {
+    display: none;
+}
+
+#check-btn10:checked~.menubars10 {
+    display: block;
+}
+
+.menubars10 {
+    display: none;
+}
+
+
+#check-btn11 {
+    display: none;
+}
+
+#check-btn11:checked~.menubars11 {
+    display: block;
+}
+
+.menubars11 {
+    display: none;
+}
