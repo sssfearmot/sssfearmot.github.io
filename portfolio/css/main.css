@@ -1,0 +1,105 @@
+.Wrap {
+
+}
+
+.page_header {
+    position: fixed;
+    display: block;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.page_header_inner {
+    position: relative;
+    display: block;
+    background: #fff;
+    height: 60px;
+    padding: 8px 140px;
+}
+
+.page_header_close {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    height: 60px;
+    left: 60px;
+}
+
+.btn {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    height: 60px;
+    width: 60px;
+}
+
+.btn i {
+    display: block;
+    margin-top: 18px;
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+.page_header_logo {
+    position: relative;
+    display: block;
+    width:84px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.page_header_logo img {
+    display: block;
+    width: 84px;
+}
+
+.page_header_find {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+    text-transform: uppercase;
+    padding: 45px;   
+}
+
+.page_header_find::after {
+    content: "";
+    font-size: 21px;
+    font-weight: 700;
+    color: #868686;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    transform: translate(0, -50%);
+    padding: 9.5px 10px 9.5px 20px;
+}
+
+.stage {
+    position: relative;
+    display: block;
+    height: 800px;
+}
+
+.stage_content_container {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    padding: 80px 140px 20px;
+    width: 100%;
+    min-height: 100%;
+    z-index: 3;
+}
+
+.stage_content_container h1 {
+    margin-top: 0;
+    font-size: 66px;
+    line-height: 66px;
+}
