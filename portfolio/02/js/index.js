@@ -6,8 +6,8 @@ $(function () {
     })
 
     $('.pb_tabpanel_body').slick({
-        centerMode: true,
-        arrows: true,
+        slidesToShow: 3,
+        arrows: false,
     })
 
     $('.pb_tablist>li .tab').on('click', function (e) {
