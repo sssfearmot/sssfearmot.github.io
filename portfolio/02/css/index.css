@@ -3,9 +3,9 @@
     line-height: 100px;
 }
 
-.header .container {
+.container {
     position: relative;
-    max-width: 1640px;
+    width: 1640px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -36,6 +36,7 @@
 }
 
 .pb_section .pb_section_inner{
+    position: relative;
     padding: 80px 0;
 }
 
@@ -65,13 +66,6 @@
     display: none;
 }
 
-.container {
-    position: relative;
-    max-width: 1640px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .pb_section_header {
     position: relative;
     margin-bottom: 30px;
@@ -96,16 +90,13 @@
     border-bottom: 2px solid #111;
 }
 
-.pb_section_body .img_box {
-    overflow: hidden;
-    position: relative;
-    margin-bottom: 20px;
+.list {
+    display: flex;
+    gap: 40px;
 }
 
-.list ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.list .desc {
+    padding-bottom: 30px;
 }
 
 .pb_section_body .list img {
@@ -118,3 +109,103 @@
     font-weight: 700;
     margin: 0 0 10px 0;
 }
+
+.readmore {
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #888;
+}
+
+.pb_section .pb_main_title {
+    position: relative;
+    margin-bottom: 30px;
+
+}
+
+.pb_main_title {
+    display: inline-block;
+    color: #000;
+    font-size: 96px;
+    font-weight: 900;
+}
+
+.pb_section .pb_tabs {
+    width: 320px;
+}
+
+.pb_tablist>li .tab {
+    color: #999;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    border: none;
+    outline: none;
+}
+
+.pb_tablist>li.on .tab {
+    color: #000;
+    border: none;
+}
+
+.pb_section .pb_tabs .on .tab::after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 3px solid #000;
+    line-height: 1;
+}
+
+
+.pb_section .pb_tabs>ul {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.pb_tabs ul {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+}
+.pb_section .pb_tabs>ul li {
+    height: auto;
+    margin: 28px 0;
+}
+
+.pb_section .pb_subtitle {
+    display: block;
+    font-size: 32px;
+    font-weight: 900;
+}
+
+.pb_section_inner .pb_tabpanel {
+
+    width: 600px;
+
+}
+
+.pb_section_inner .pb_tabpanel img {
+    width:100%;
+}
+
+/* .container .pb_tabpanel_body {
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.pb_tabpanel .slick-list {
+    overflow: visible;
+    height: 400px;
+}
+
+.pb_tabpanel .slick-list .slick-track {
+    align-items: flex-end;
+    height: 400px;
+} */
+
+
+/* .pb_section_inner .container {
+    display: flex;
+    margin: 0 0 0 auto;
+} */
+

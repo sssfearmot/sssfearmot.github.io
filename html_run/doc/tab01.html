@@ -75,9 +75,9 @@
             $('.tab_menu>li>a').on('click', function (e) {
                 e.preventDefault();
                 //consol.log($(this).parent().index())
-                var idx = $(this).parent().index();
-                $('.tab_content>li').removeClass('on')
-                $('.tab_content>li').eq(idx).addClass('on');
+                // var idx = $(this).parent().index();
+                // $('.tab_content>li').removeClass('on')
+                // $('.tab_content>li').eq(idx).addClass('on');
                 $('.tab_menu>li').removeClass('on');
                 $(this).parent().addClass('on');
             })
