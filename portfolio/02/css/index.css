@@ -117,9 +117,10 @@
 }
 
 .pb-table {
-    /* display: table; */
+    display: table;
     table-layout: fixed;
     width: 100%;
+    background: #f8f8ff;
 }
 
 .pb_section .pb_main_title {
@@ -220,32 +221,30 @@
     display: block;
     position: relative;
     margin: 0 auto;
-    padding: 0 35px;
-    max-width: 1312px;
+    padding: 0 15px;
+    max-width: 1640px;
 }
 
 .pb-table .pb_tabpanel {
     position: absolute;
     overflow: hidden;
-    width: 100%;
-    min-width: 1312px;
-    height: 700px;
-    top: 0%;
-    left: 100%;
+    width: 1400px;
+    height: 400px;
+    top: 20%;
+    left: 30%;
     z-index: 0;
     margin: 0 0 0 -180px;
 }
 
-/* .pb-table .pb_tabpanel_body {
+.pb-table .pb_tabpanel_body {
     position: absolute;
-    left: 50%;
-    margin: -300px;
+    width: 300px;
+    left: 10%;
     transform: translate(-50%, 0);
-} */
+} 
 
 .pb-table .pb_tabpanel .slick-list {
     overflow: visible;
-    height: 516px;
 }
 
 .slick-list {
@@ -259,8 +258,7 @@
 }
 
 .pb-table .pb_tabpanel .slick-list .slick-track {
-    /* align-items: flex-end; */
-    height: 488px;
+    align-items: flex-end;
 }
 
 .slick-track {
@@ -274,8 +272,7 @@
 }
 
 .pb-table .pb_tabpanel .slick-list .slick-slide {
-    width: 208px;
-    height: 176px;
+    width: 300px !important;
     padding: 0 16px;
     transform: translate(0, 0);
 }
@@ -285,26 +282,45 @@
     width: 100%;
     height: 100%;
     position: relative;
-    transition-property: transform;
 }
 
-/* .container .pb_tabpanel_body {
-    position: absolute;
-} */
-
-/*
-.pb_tabpanel .slick-list {
-    overflow: visible;
-    height: 400px;
+.pb_tabpanel_body .slick-dots {
+    margin: 30px 0;
+    text-align: center;
 }
 
-.pb_tabpanel .slick-list .slick-track {
-    align-items: flex-end;
-    height: 400px;
-} */
-
-
-/* .pb_section_inner .container {
+.pb_arrow {
+    position: relative;
     display: flex;
-    margin: 0 0 0 auto;
-} */
+    justify-content: space-between;
+    width: 250px;
+    height: 40px;
+    top: 65%;
+    left: 15px;
+    /* background: #000; */
+}
+
+.pb_arrow i {
+    font-size: 40px;
+    color: #000;
+}
+
+.pb_tabpanel {
+    position: relative;
+}
+
+.pb_tabpanel>li {
+    position: absolute;
+    inset: 0 0 0 0;
+    visibility: hidden;
+    padding: 10px 0;
+}
+
+.pb_tabpanel>li {
+    visibility: hidden;
+    padding: 10px 0;
+}
+
+.pb_tabpanel>li.on {
+    visibility: visible;
+}

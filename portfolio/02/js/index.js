@@ -6,13 +6,25 @@ $(function () {
     })
 
     $('.pb_tabpanel_body').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
+        // centerMode: true,
+        // dots:true,
         arrows: false,
     })
 
-    $('.pb_tablist>li .tab').on('click', function (e) {
-        e.preventDefault();
-        $('.pb_tablist>li').removeClass('on');
-        $(this).parent().addClass('on');
+    $('.pb-table .pb_tabpanel i:nth-child(1)').on('click', function () {
+        $('.pb_tabpanel_body').slick('slickPrev')
     })
+
+    $('.pb-table .pb_tabpanel i:nth-child(2)').on('click', function () {
+        $('.pb_tabpanel_body').slick('slickNext')
+    })
+
+    $('.pb_tablist>li').on('click', function () {
+        var idx = $(this).index();
+        $('.pb_tabpanel>li').removeClass('on');
+        $('.pb_tabpanel>li').eq(idx).addClass('on');
+        $('.pb_tablist>li').removeClass('on');
+        $(this).addClass('on');
+    });
 })
