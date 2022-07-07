@@ -25,18 +25,80 @@
 }
 
 .header nav>ul>li>a {
+    position: relative;
     color: #fff;
     font-size: 14px;
     font-weight: 500;
+    display: block;
 }
 
-.header .search {
+#nav .pb_primary>li>a::after {
+    content: "-after";
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    /* transition: width .2s ease-in-out; */
+    /* z-index: 999; */
+}
+
+#nav .pb_primary>li>a:hover::after {
+    width: 100%;
+    transition: width .2s ease-in-out;
+}
+
+#nav ul>li {
+    position: relative;
+}
+
+#nav ul>li .pb_menu {
+    position: absolute;
+    top: 100%;
+    z-index: 999;
+    left: 0;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    font-size: 12px;
+    padding: 24px;
+    display: flex;
+}
+
+#nav ul>li .pb_sub_menu {
+    display: flex;
+}
+
+#nav ul>li .pb_sub_menu>li {
+    margin-bottom: 16px;
+}
+
+#nav ul>li .pb_sub_menu .pb_sub_menu {
+    display: block;
+}
+
+#nav ul>li .pb_sub_menu li a {
+    font-size: 14px;
+    width: 160px;
+    line-height: 20px;
+    white-space: nowrap;
+    display: block;
+    color: #888;
+    font-weight: 500;
+}
+
+#nav ul>li:hover .pb_menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.search {
     font-size: 24px;
     color: #fff;
 }
 
 .pb_section .pb_section_inner {
-    position: relative;
     padding: 80px 0;
 }
 
@@ -44,8 +106,14 @@
     padding-top: 0 !important;
 }
 
+/* .slick-dots {
+    position: absolute;
+} */
+
 .slider .slick-dots {
-    margin: 30px 0;
+    position: absolute;
+    bottom: -45px;
+    width: 100%;
     text-align: center;
 }
 
@@ -231,7 +299,7 @@
     width: 1400px;
     height: 400px;
     top: 20%;
-    left: 30%;
+    left: 26.8%;
     z-index: 0;
     margin: 0 0 0 -180px;
 }
@@ -349,7 +417,8 @@
     padding-top: 87px;
     line-height: 1.15em;
     color: #fff;
-    font-weight: 100;
+    font-weight: 500;
+    text-shadow: 0 0 2px;
 }
 
 .pb_bg .pb_company p {
@@ -358,6 +427,11 @@
     font-size: 17px;
     color: #fff;
     line-height: 1.4em;
+    text-shadow: 0 0 1px;
+}
+
+.pb_bg .pb_company p span {
+    display: block;
 }
 
 .pb_bg .pb_company .pb_btn {
@@ -378,9 +452,10 @@
     line-height: 42px;
     text-align: center;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     min-width: 148px;
     padding: 0 20px;
+    text-shadow: 0 0 1px;
 }
 
 /* .pb_bg h2 {
@@ -410,7 +485,7 @@
     width: 100%;
     max-width: 1640px;
     margin: auto;
-    margin-top: 40px;
+    margin-top: 110px;
     padding: 0 15px;
 }
 
@@ -419,9 +494,9 @@
     position: absolute;
     display: block;
     width: 100%;
-    height: 560px;
+    height: 900px;
     background: #f8f8ff;
-    margin-top: -280px;
+    margin-top: -625px;
     left: 0;
     z-index: -99;
 }
@@ -431,12 +506,23 @@
     background-size: cover;
 }
 
+.pb_bottom_franchise a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
 .pb_bm {
+    position: relative;
     float: left;
     width: 27.96%;
     height: 330px;
     margin-right: 0.84%;
     padding: 44px 35px 0 35px;
+    box-sizing: border-box;
 }
 
 .pb_bm h2 {
@@ -485,9 +571,17 @@
     color: #fff;
 }
 
-input::-ms-input-placeholder {color: #fff;}
-input::-webkit-input-placeholder {color: #fff;}
-input::-moz-placeholder {color: #fff;}
+input::-ms-input-placeholder {
+    color: #fff;
+}
+
+input::-webkit-input-placeholder {
+    color: #fff;
+}
+
+input::-moz-placeholder {
+    color: #fff;
+}
 
 .pb_bottom_store .pb_store_search a {
     margin-left: -50px;
@@ -537,7 +631,7 @@ input::-moz-placeholder {color: #fff;}
 }
 
 .pb_news ul li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
 }
 
 .pb_news ul li a {
@@ -597,7 +691,7 @@ input::-moz-placeholder {color: #fff;}
 
 .pb_sns h2 {
     font-size: 24px;
-    padding-top: 98px;
+    padding-top: 90px;
     text-align: center;
     font-weight: 800;
     color: #3c3c3c;
@@ -631,8 +725,8 @@ input::-moz-placeholder {color: #fff;}
     vertical-align: top;
     overflow: hidden;
     height: 234px;
-    width: 19%;
-    margin: 0 0.08% 1px 0.08%;
+    width: 19.5%;
+    margin: 0 0.08% 2px 0.08%;
 }
 
 .pb_sns .pb_sns_list li img {
