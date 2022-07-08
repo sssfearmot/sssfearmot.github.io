@@ -27,8 +27,8 @@
 .header nav>ul>li>a {
     position: relative;
     color: #fff;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 700;
     display: block;
 }
 
@@ -86,6 +86,10 @@
     display: block;
     color: #888;
     font-weight: 500;
+}
+
+#nav ul>li .pb_sub_menu li a:hover {
+    color: #023586;
 }
 
 #nav ul>li:hover .pb_menu {
@@ -231,9 +235,10 @@
 .pb_tabs ul {
     align-items: center;
     display: flex;
-    flex-grow: 1;
-    flex-shrink: 0;
+    /* flex-grow: 1;
+    flex-shrink: 0; */
     justify-content: flex-start;
+    z-index: 1;
 }
 
 .pb_tablist>li .tab {
@@ -260,7 +265,7 @@
 
 .pb_section .pb_tabs>ul li {
     height: auto;
-    margin: 28px 0;
+    margin: 20px 0;
 }
 
 .pb_section .pb_subtitle {
@@ -296,8 +301,8 @@
 .pb-table .pb_tabpanel {
     position: absolute;
     overflow: hidden;
-    width: 1400px;
-    height: 400px;
+    width: 1500px;
+    height: 300px;
     top: 20%;
     left: 26.8%;
     z-index: 0;
@@ -363,7 +368,7 @@
     justify-content: space-between;
     width: 250px;
     height: 40px;
-    top: 65%;
+    top: 86%;
     left: 15px;
     /* background: #000; */
 }
@@ -865,3 +870,7 @@ footer .pb_copy {
     font-weight: 700;
     color: #6c6c6c;
 }
+
+
+
+
