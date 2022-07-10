@@ -1,0 +1,283 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 70;
+    background: #fff;
+    box-shadow: 0px 0px 1rem;
+}
+
+.container {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.cos_top {
+    position: sticky;
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    padding: 1.2rem 2rem 0.8rem;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cos_top>h1 {
+    display: flex;
+    max-width: 5rem;
+    width: 100%;
+    height: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1px;
+}
+
+.nav {
+    display: flex;
+    width: 67%;
+    height: 3rem;
+    float: left;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    overflow: scroll hidden;
+}
+
+.nav>ul {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.nav>ul>li {
+    display: flex;
+    height: 100%;
+    min-width: 85px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav>ul>li>a {
+    font: 15px;
+    transition: color 0.2 ease-in-out 0s;
+    color: rgb(88, 88, 88);
+}
+
+.cos_btn {
+    position: relative;
+    display: flex;
+    float: right;
+    width: 9rem;
+    height: 3rem;
+    top: 0;
+    right: 0;
+    justify-content: flex-end;
+}
+
+.btn_box {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_box>button {
+    border: none;
+    background: rgb(153, 100, 120);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 100;
+    border-radius: 25px;
+    width: 50%;
+    height: 25px;
+    margin: 0 5px;
+}
+
+.btn_login {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #ddd;
+}
+
+.cos_section {
+    padding: 5vw;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    transition: transform 2s ease-in-out 0s;
+}
+
+.cos_container {
+    position: relative;
+    display: flex;
+    height: 750px;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    background: rgb(255, 255, 255);
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    /* transition: height 2s ease-in-out 0s; */
+}
+
+/* .cos_container.cos_move {
+    height: 0px;
+} */
+
+.cos_form {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.cos_screen {
+    width: 1300px;
+    height: 650px;
+    perspective: 2000px;
+    margin: auto;
+    overflow: hidden;
+    transform-style: preserve-3d;
+}
+
+.cos_carousel {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 150px;
+    margin: 0 auto;
+    padding: 0;
+    transform-style: preserve-3d;
+    transition: all 1s;
+}
+
+.cos_carousel>li:first-child {
+    transform: rotateY(18deg);
+}
+
+.cos_carousel>li:nth-child(2) {
+    transform: rotateY(54deg);
+}
+
+.cos_carousel>li:nth-child(3) {
+    transform: rotateY(90deg);
+}
+
+.cos_carousel>li:nth-child(4) {
+    transform: rotateY(126deg);
+}
+
+.cos_carousel>li:nth-child(5) {
+    transform: rotateY(162deg);
+}
+
+.cos_carousel>li:nth-child(6) {
+    transform: rotateY(198deg);
+}
+
+.cos_carousel>li:nth-child(7) {
+    transform: rotateY(234deg);
+}
+
+.cos_carousel>li:nth-child(8) {
+    transform: rotateY(270deg);
+}
+
+.cos_carousel>li:nth-child(9) {
+    transform: rotateY(306deg);
+}
+
+.cos_carousel>li:nth-child(10) {
+    transform: rotateY(342deg);
+}
+
+.cos_carousel>li {
+    position: absolute;
+    display: block;
+    width: 100%;
+    transform-style: preserve-3d;
+    list-style: none;
+    pointer-events: none;
+}
+
+.cos_carousel>li>div {
+    display: flex;
+    float: left;
+    width: 230px;
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+    cursor: pointer;
+    pointer-events: auto;
+    overflow: hidden;
+    transform: rotateY(90deg);
+    -webkit-box-reflect: below 10px linear-gradient(transparent 70%, hsla(0, 0%, 100%, .3));
+    justify-content: center;
+    align-items: center;
+}
+
+.cos_carousel>li>div>img {
+    max-width: 90%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.left {
+    margin-left: -45%;
+}
+
+.right {
+    margin-left: 45%;
+}
+
+.left,
+.right {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.left>img,
+.right>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.btn_up {
+    height: 45px;
+    width: 45px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 1px 4px;
+    margin-bottom: 2rem;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* .btn_up.cos_move {
+    transform: rotate(180deg);
+} */
+
+
+
+.btn_up>div {
+    width: 100%;
+    height: 85%;
+    background: url(../img/cos_up.png) no-repeat center center/ 70% 20% #fff;
+    border-radius: 50%;
+}
