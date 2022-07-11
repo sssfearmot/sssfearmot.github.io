@@ -47,7 +47,7 @@
     padding: 0 10px;
     border: 1px solid #ddd;
     border-radius: 30px;
-    overflow: scroll hidden;
+    /* overflow: hidden; */
 }
 
 .nav>ul {
@@ -108,31 +108,30 @@
     color: #ddd;
 }
 
-.cos_section {
-    padding: 5vw;
+.cos_container {
+    display: block;
+    max-width: 1920px;
     width: 100%;
-    height: 100%;
-    background: rgb(255, 255, 255);
-    transition: transform 2s ease-in-out 0s;
+    padding: 0 24px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-.cos_container {
+.cos_slide {
     position: relative;
     display: flex;
-    height: 750px;
+    height: 950px;
+    width: 100%;
     margin-top: 5rem;
     margin-bottom: 2rem;
-    background: rgb(255, 255, 255);
-    width: 100%;
     flex-direction: column;
-    align-items: center;
-    /* justify-content: center; */
-    /* transition: height 2s ease-in-out 0s; */
+    justify-content: space-between;
+    transition: height 2s ease-in-out 0s;
 }
 
-/* .cos_container.cos_move {
+.cos_slide.active {
     height: 0px;
-} */
+}
 
 .cos_form {
     position: relative;
@@ -142,9 +141,9 @@
 }
 
 .cos_screen {
-    width: 1300px;
-    height: 650px;
-    perspective: 2000px;
+    width: 1480px;
+    height: 900px;
+    perspective: 1400px;
     margin: auto;
     overflow: hidden;
     transform-style: preserve-3d;
@@ -154,7 +153,7 @@
     position: relative;
     display: block;
     width: 100%;
-    top: 150px;
+    top: 300px;
     margin: 0 auto;
     padding: 0;
     transform-style: preserve-3d;
@@ -265,19 +264,198 @@
     border-radius: 50%;
     box-shadow: 0 1px 4px;
     margin-bottom: 2rem;
+    margin-left: 50%;
     background: rgb(255, 255, 255);
     cursor: pointer;
+    text-align: center;
 }
 
-/* .btn_up.cos_move {
+.btn_img.active {
     transform: rotate(180deg);
-} */
+}
 
-
-
-.btn_up>div {
+.btn_img {
     width: 100%;
     height: 85%;
     background: url(../img/cos_up.png) no-repeat center center/ 70% 20% #fff;
     border-radius: 50%;
+    transition: all 1.5s ease-in-out 0s;
+}
+
+.cos_container02 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0 24px;
+
+    /* display: block;
+    height: 100vh;
+    width: 100%;
+    background: rgb(255, 255, 255); */
+}
+
+.cos_container02>nav {
+    display: flex;
+    height: 5.2vh;
+    width: 100%;
+    max-height: 46px;
+    border-radius: 30px;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    min-height: 40px;
+    /* overflow-x: scroll; */
+    border: 1px solid rgb(215, 215, 215);
+    color: rgb(155, 155, 155);
+    background: rgb(255, 255, 255);
+}
+
+.cos_container02>nav>a {
+    height: 100%;
+    width: 150px;
+    border-radius: 20px;
+    padding: 7.3px 20px;
+    font-size: 12px;
+    font-weight: 100;
+    outline: none;
+    border: none;
+    margin-right: 10px;
+    box-shadow: 0px 3px 10px 0px;
+    transform: scale(0.9);
+    background: rgb(153, 100, 120);
+    color: #fff;
+    text-align: center;
+}
+
+.cos_more {
+    display: flex;
+    width: 100%;
+    height: 10.2vh;
+    min-height: 60px;
+    max-height: 85px;
+    background: #fff;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.cos_more>div {
+    display: flex;
+    width: auto;
+    height: 100%;
+    margin-top: 0vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_more {
+    position: relative;
+    display: flex;
+    height: 36%;
+    width: 120px;
+    margin-right: 3vw;
+    border-radius: 19px;
+    border: 1px solid #ddd;
+    background: #fff;
+    text-align: left;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn_more>span {
+    display: flex;
+    width: 82%;
+    font-weight: 400;
+    color: rgb(155, 155, 155);
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding-left: 12%;
+}
+
+.btn_more_img {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 20px;
+    margin-right: 0.5vw;
+    top: 0;
+    right: 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_more_img>img {
+    transform: scale(1);
+    height: 25%;
+    width: 10px;
+    border: none;
+    object-fit: contain;
+}
+
+.btn_more_the {
+    position: absolute;
+    display: flex;
+    height: 12vh;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 14px;
+    padding-left: 12%;
+    top: 4.2vh;
+    left: 0px;
+    flex-direction: column;
+    justify-content: space-around;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.btn_more_the a {
+    display: flex;
+    font-size: 12px;
+    width: 80%;
+    height: 25%;
+    color: rgb(155, 155, 155);
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    padding: 0px !important;
+}
+
+.btn_more02 {
+    position: relative;
+    height: 36%;
+    width: 120px;
+    border: 1px solid rgb(215, 215, 215);
+    margin-right: 3vw;
+    border-radius: 19px;
+    background: #fff;
+    text-align: left;
+    cursor: pointer;
+}
+
+.btn_more02>div {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 20px;
+    top: 0px;
+    left: 0px;
+    margin-left: 13%;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_more02>div>div {
+    height: 55%;
+    width: 100%;
+    object-fit: contain;
+    transform: scale(1);
+    background: url(../img/cos_Control.png) 0% 0% / contain no-repeat;
+}
+
+.btn_more02 span {
+    font-weight: 400;
+    padding-left: 32%;
+    color: rgb(155, 155, 155);
 }

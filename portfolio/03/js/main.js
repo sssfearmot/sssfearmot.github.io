@@ -20,7 +20,22 @@ $(function () {
         });
     }
 
-    // $('.btn_up').click(function () {
-    //     $('.cos_move').show();
-    // });
+    // $('.cos_move').click(function(){
+    //     if($(this).hasClass('active')){
+    //         $('.cos_move').removeClass('active');
+    //     } else {
+    //         $('.cos_move').removeClass('active');
+    //         $(this).addClass('active');
+    //     }
+    // })
+
+    // $('.cos_move').click(function(){
+    //     $('.cos_move').not(this).removeClass('active');
+    //     $(this).toggleClass('active');
+    // })
+
+        $('.btn_img').on('click', function(){
+            $('.cos_slide').toggleClass('active')
+        })
+
 })
