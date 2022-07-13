@@ -146,7 +146,6 @@
     perspective: 1400px;
     margin: auto;
     overflow: hidden;
-    transform-style: preserve-3d;
 }
 
 .cos_carousel {
@@ -219,14 +218,14 @@
     cursor: pointer;
     pointer-events: auto;
     overflow: hidden;
-    transform: rotateY(90deg);
+    transform: rotateY(-90deg);
     -webkit-box-reflect: below 10px linear-gradient(transparent 70%, hsla(0, 0%, 100%, .3));
     justify-content: center;
     align-items: center;
 }
 
 .cos_carousel>li>div>img {
-    max-width: 90%;
+    max-width: 200%;
     max-height: 100%;
     cursor: pointer;
 }
@@ -458,4 +457,162 @@
     font-weight: 400;
     padding-left: 32%;
     color: rgb(155, 155, 155);
+}
+
+
+/* 2022.07.13 후작업 */
+
+.cos_list {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.cos_list_wrap {
+    position: relative;
+    display: block;
+    max-width: 1500px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0;
+    margin: 50px auto 50px auto;
+    text-align: center;
+}
+
+.cos_list_column {
+    display: inline-block;
+    width: 24%;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-top: 30px;
+    vertical-align: top;
+    margin-bottom: 30px;
+}
+
+.cos_product {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.cos_product .cos_img_holder {
+    position: relative;
+}
+
+.cos_product_img {
+    position: relative;
+}
+
+.cos_product_img img {
+    display: block;
+    width: 100%;
+}
+
+.cos_description {
+    display: block;
+    margin-top: 13px;
+    text-align: left;
+    width: 100%;
+    flex-direction: column;
+}
+
+.cos_description span {
+    position: relative;
+    margin: 5px 10px;
+    float: right;
+    cursor: pointer;
+}
+
+.cos_price {
+    height: 16px;
+    vertical-align: baseline;
+    order: 2;
+    margin: 5px 0 0;
+    font-size: 11px;
+}
+
+.cos_price label {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    line-height: 12px;
+}
+
+.cos_sm {
+    max-height: 32px;
+    max-width: 108px;
+    overflow: hidden;
+    order: 4;
+    margin: 6px 0 0;
+    float: left;
+}
+
+.cos_sm img {
+    height: 11px;
+    width: 11px;
+    vertical-align: top;
+}
+
+.cos_list_more img {
+    display: block;
+    margin-left: 94.5%;
+}
+
+.cos_container03 {
+    position: relative;
+    display: flex;
+    height: 44.5vh;
+    max-width: 1500px;
+    padding: 0 55px;
+    margin: 50px auto;
+}
+
+.cos_magazine_a {
+    position: relative;
+    background: url(../img/cos_Magazine01.jpg) center center / cover;
+    flex: 1 1 0%;
+    height: 100%;
+    transform: all 0.8s ease 0s;
+}
+
+.cos_magazine_txt {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.cos_magazine_txt>span {
+    font-size: 35px;
+    color: #fff;
+    text-shadow: #000 1px 2px;
+}
+
+.cos_magazine_b {
+    position: relative;
+    background: url(../img/cos_Magazine02.jpg) center center / cover;
+    flex: 1 1 0%;
+    height: 100%;
+    transform: all 0.8s ease 0s;
+}
+
+.cos_magazine_c {
+    position: relative;
+    background: url(../img/cos_Magazine03.jpg) center center / cover;
+    flex: 1 1 0%;
+    height: 100%;
+    transform: all 0.8s ease 0s;
+}
+
+.cos_magazine_d {
+    position: relative;
+    background: url(../img/cos_Magazine04.jpg) center center / cover;
+    flex: 1 1 0%;
+    height: 100%;
+    transform: all 0.8s ease 0s;
 }
