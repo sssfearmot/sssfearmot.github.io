@@ -7,10 +7,10 @@ $(function () {
 
     function rotate(e) {
         if (e.data.d == "n") {
-            currdeg = currdeg - 35;
+            currdeg = currdeg - 36;
         }
         if (e.data.d == "p") {
-            currdeg = currdeg + 35;
+            currdeg = currdeg + 36;
         }
         carousel.css({
             "-webkit-transform": "rotateY(" + currdeg + "deg)",
@@ -38,4 +38,13 @@ $(function () {
             $('.cos_slide').toggleClass('active')
         })
 
+        // $('.btn_img').on('click', function(){
+        //     $('.btn_img').removeClass('active');
+        //     $('.btn_img').addClass('active');
+        // })
+
+        $('.btn_img').click(function(){
+            $('.btn_img').not(this).removeClass('active');
+            $(this).toggleClass('active');
+        });
 })

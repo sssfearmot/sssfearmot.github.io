@@ -4,7 +4,7 @@
     top: 0px;
     z-index: 70;
     background: #fff;
-    box-shadow: 0px 0px 1rem;
+    box-shadow: 0px 0px 5px;
 }
 
 .container {
@@ -91,22 +91,23 @@
 }
 
 .btn_box>button {
-    border: none;
-    background: rgb(153, 100, 120);
-    color: #fff;
     font-size: 10px;
-    font-weight: 100;
+    font-weight: 400;
     border-radius: 25px;
     width: 50%;
     height: 25px;
     margin: 0 5px;
+    background: #fff;
+    border: 1px solid rgb(155, 155, 155);
+    color: #000;
+    cursor: pointer;
 }
 
-.btn_login {
+/* .btn_login {
     background: #fff;
     border: 1px solid #ddd;
     color: #ddd;
-}
+} */
 
 .cos_container {
     display: block;
@@ -225,7 +226,7 @@
 }
 
 .cos_carousel>li>div>img {
-    max-width: 200%;
+    max-width: 100%;
     max-height: 100%;
     cursor: pointer;
 }
@@ -261,7 +262,7 @@
     width: 45px;
     border: none;
     border-radius: 50%;
-    box-shadow: 0 1px 4px;
+    box-shadow: 0 0.5px 2px;
     margin-bottom: 2rem;
     margin-left: 50%;
     background: rgb(255, 255, 255);
@@ -286,7 +287,8 @@
     width: 100%;
     box-sizing: border-box;
     margin: 0 auto;
-    padding: 0 24px;
+    padding: 0 57px;
+    min-height: 2100px;
 
     /* display: block;
     height: 100vh;
@@ -297,7 +299,7 @@
 .cos_container02>nav {
     display: flex;
     height: 5.2vh;
-    width: 100%;
+    width: 1785px;
     max-height: 46px;
     border-radius: 30px;
     justify-content: space-evenly;
@@ -315,15 +317,19 @@
     border-radius: 20px;
     padding: 7.3px 20px;
     font-size: 12px;
-    font-weight: 100;
+    font-weight: 300;
     outline: none;
     border: none;
-    margin-right: 10px;
-    box-shadow: 0px 3px 10px 0px;
-    transform: scale(0.9);
+    color: rgb(155, 155, 155);
+    text-align: center;
+    transition: all 0.5s ease 0s;
+}
+
+.cos_container02>nav>a:hover {
+    box-shadow: 0px 2px 6px 0px;
+    transform: scale(1.2);
     background: rgb(153, 100, 120);
     color: #fff;
-    text-align: center;
 }
 
 .cos_more {
@@ -554,16 +560,152 @@
 
 .cos_list_more img {
     display: block;
-    margin-left: 94.5%;
+    margin-right: 35px;
+    float: right;
 }
 
-.cos_container03 {
+/*  */
+
+.cos_lookdetails_content {
+    position: relative;
+}
+
+.cos_lookdetails_content .cos_lookdetails_wrapper {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 6%;
+}
+
+.cos_lookdetails_media {
+    position: sticky;
+    background: #f9f9f9;
+    height: 100vh;
+    top: 0;
+    z-index: 0;
+}
+
+.cos_lookdetails_media .cos_component {
+    padding-top: 0;
+    height: 100%;
+}
+
+.cos_lookdetails_media div {
+    height: 100%;
+}
+
+.cos_lookdetails_media .cos_decorative_ratio {
+    height: 100vh;
+    padding-top: 0;
+}
+
+.cos_decorative_wrapper {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+}
+
+.cos_element_loaded {
+    position: relative;
+    opacity: 1;
+    z-index: 0;
+}
+
+.cos_lookdetails_media .cos_decorative_ratio video {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: 0;
+}
+
+
+.cos_sale_banner_wrap {
+    width: 100%;
+    margin: 0 0 30px 0;
+    background: #fff;
+    border-top: 1px solid #1b1b1b;
+    border-bottom: 1px solid #1b1b1b;
+    clear: both;
+}
+
+.cos_sale_banner_wrap .cos_row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 260px;
+    max-width: 1540px;
+    margin: auto;
+}
+
+.cos_sale_banner_wrap .cos_row div {
+    flex: 1;
+    color: #1b1b1b;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.cos_sale_banner_wrap .cos_row span {
+    display: block;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 125px;
+    line-height: 129px;
+}
+
+.cos_sale_banner_wrap .cos_row a {
+    display: block;
+    width: 240px;
+    height: 44px;
+    line-height: 45px;
+    margin: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background: #1b1b1b;
+    color: #fff;
+}
+
+.cos_sale {
+    display: flex;
+    justify-content: center;
+}
+
+.cos_magazine {
+    display: block;
+    width: 100%;
+}
+
+.cos_text_block {
+    position: relative;
+    padding: 0;
+    max-width: 100%;
+    margin: 80px auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.cos_text_block>div>h2 {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 10px;
+}
+
+
+.cos_magazine_box {
     position: relative;
     display: flex;
     height: 44.5vh;
     max-width: 1500px;
     padding: 0 55px;
     margin: 50px auto;
+    cursor: pointer;
 }
 
 .cos_magazine_a {
@@ -571,7 +713,7 @@
     background: url(../img/cos_Magazine01.jpg) center center / cover;
     flex: 1 1 0%;
     height: 100%;
-    transform: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
 }
 
 .cos_magazine_txt {
@@ -598,7 +740,7 @@
     background: url(../img/cos_Magazine02.jpg) center center / cover;
     flex: 1 1 0%;
     height: 100%;
-    transform: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
 }
 
 .cos_magazine_c {
@@ -606,7 +748,7 @@
     background: url(../img/cos_Magazine03.jpg) center center / cover;
     flex: 1 1 0%;
     height: 100%;
-    transform: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
 }
 
 .cos_magazine_d {
@@ -614,5 +756,53 @@
     background: url(../img/cos_Magazine04.jpg) center center / cover;
     flex: 1 1 0%;
     height: 100%;
-    transform: all 0.8s ease 0s;
+    transition: all 0.8s ease 0s;
+}
+
+.cos_hover:hover {
+    flex: 2.5 1 0%;
+}
+
+.cos_hover:hover .cos_magazine_txt {
+    transition: opacity 1.5s ease 0s;
+    opacity: 1;
+}
+
+.cos_list_title {
+    padding-bottom: 15px;
+}
+
+.cos_list_title img {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.cos_hedline {
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+.cos_hedline h2 {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.0825em;
+    text-transform: uppercase;
+    margin: -3px 0 0;
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+.cos_hedline p {
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.cos_cta {
+    font-size: 12px;
+    line-height: 17px;
+    text-align: left;
+}
+
+.cos_cta a {
+    border-bottom: 1px solid #000;
 }
