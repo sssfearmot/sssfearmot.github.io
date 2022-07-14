@@ -34,8 +34,28 @@ $(function () {
     //     $(this).toggleClass('active');
     // })
 
-        $('.btn_img').on('click', function(){
-            $('.cos_slide').toggleClass('active')
-        })
+    $('.btn_img').on('click', function () {
+        $('.cos_slide').toggleClass('active')
+    })
+
+    $('.btn_more').on('click', function () {
+        $('.btn_more_the').toggleClass('active')
+    })
+
+    $('.btn_more02').on('click', function () {
+        $('.cos_filter_form').toggleClass('active')
+    })
+
+    $('.btn_more02').click(function () {
+        if ($(this).hasClass("active")) {
+            $(this).removeClass("active");
+        } else {
+            $(this).addClass("active");
+        }
+    })
+
+    $('.cos_color').on('click', function () {
+        $('.cos_hasg_tag').show('active')
+    })
 
 })
