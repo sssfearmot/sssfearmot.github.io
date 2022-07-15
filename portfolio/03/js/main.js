@@ -44,7 +44,7 @@ $(function () {
 
     $('.btn_more02').on('click', function () {
         $('.cos_filter_form').toggleClass('active')
-    })
+    });
 
     $('.btn_more02').click(function () {
         if ($(this).hasClass("active")) {
@@ -52,19 +52,11 @@ $(function () {
         } else {
             $(this).addClass("active");
         }
-    })
+    });
 
-    $('.cos_color').on('click', function () {
-        $('.cos_hasg_tag').show('active')
-    })
-
-        // $('.btn_img').on('click', function(){
-        //     $('.btn_img').removeClass('active');
-        //     $('.btn_img').addClass('active');
-        // })
-
-        $('.btn_img').click(function(){
-            $('.btn_img').not(this).removeClass('active');
-            $(this).toggleClass('active');
-        });
+    $('.btn_img').click(function(){
+        $('.btn_img').not(this).removeClass('active');
+        $(this).toggleClass('active');
+    });
+    
 })

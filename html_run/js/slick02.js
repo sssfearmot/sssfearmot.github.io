@@ -21,6 +21,8 @@ $(function () {
         $('.main_slider').slick('slickNext')
     });
 
+    // 
+
     $('.left_slider').slick({
         arrows: false,
         fade: true,

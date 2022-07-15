@@ -644,7 +644,7 @@ video {
     position: relative;
 }
 
-.cos_lookdetails_header>span:last-child {
+.cos_lookdetails_header>h2>span:last-child {
     display: block;
     font-size: .75rem;
     font-weight: 600;
@@ -1003,22 +1003,6 @@ video {
     background: #fff;
 }
 
-.cos_hasg_tag {
-    height: 100%;
-    width: 17%;
-    visibility: visible;
-    transform: scale(0.65);
-    opacity: 0.8;
-    justify-content: center;
-    align-items: center;
-    display: none;
-    background: url(../img/cos_shap.png) 0% 0% / contain no-repeat;
-}
-
-.cos_hasg_tag.active {
-    display: block;
-}
-
 .cos_color input {
     height: 100%;
     width: 55%;
@@ -1129,7 +1113,7 @@ select::-ms-expand {
 }
 
 footer .pb_bottom_logo {
-    margin: 41px 0 24px;
+    margin: 0 20px;
 }
 
 footer .pb_bottom_logo img {

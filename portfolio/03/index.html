@@ -157,13 +157,13 @@
                         </div>
                         <div class="cos_filter_form">
                             <div class="test">
-                                <input type="text" placeholder="작가명">
+                                <input type="text" placeholder="제품명" onfocus="this.placeholder=''" onblur="this.placeholder='제품명'">
                                 <div class="cos_search_name">
                                     <div></div>
                                 </div>
                             </div>
                             <div class="cos_search_tag">
-                                <input type="text" placeholder="작품명, 태그">
+                                <input type="text" placeholder="가격" onfocus="this.placeholder=''" onblur="this.placeholder='가격'">
                                 <div class="cos_tag">
                                     <div></div>
                                 </div>
@@ -174,8 +174,7 @@
                                         <div></div>
                                     </button>
                                 </div>
-                                <div class="cos_hasg_tag"></div>
-                                <input type="text" placeholder="Color">
+                                <input type="text" placeholder="Color" onfocus="this.placeholder=''" onblur="this.placeholder='Color'">
                             </div>
                         </div>
 
@@ -499,6 +498,7 @@
                 </div>
             </section>
 
+            <!-- lookdetails -->
             <section class="cos_section">
                 <div class="cos_sale_banner_wrap">
                     <div class="cos_row">
@@ -512,82 +512,79 @@
                     </div>
                 </div>
 
-
-                <div class="cos_lookdetails_wrapper">
-                    <div class="cos_lookdetails_media">
-                        <div>
-                            <video loop="" autoplay="" muted="">
-                                <source type="video/mp4" src="./video/FSH-1649857130947-001v01.mp4">
-                            </video>
+                <div class="cos_lookdetails_container">
+                    <div class="cos_lookdetails_wrapper">
+                        <div class="cos_lookdetails_media">
+                            <div>
+                                <video loop="" autoplay="" muted="">
+                                    <source type="video/mp4" src="./video/FSH-1649857130947-001v01.mp4">
+                                </video>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="cos_lookdetails_products">
-                        <header class="cos_lookdetails_header">
-                            <h2>
-                                <span>룩1</span>
-                                <span>cos de art 2021/22</span>
-                            </h2>
-                            <div class="cos_lookdetails_btn">
-                                <a href="">
+                        <div class="cos_lookdetails_products">
+                            <header class="cos_lookdetails_header">
+                                <h2>
+                                    <span>룩1</span>
+                                    <span>COS Autumn Winter 2021</span>
+                                </h2>
+                                <div class="cos_lookdetails_btn">
                                     <i class="xi-angle-left-min"></i>
-                                </a>
-                                <a href="">
                                     <i class="xi-angle-right-min"></i>
-                                </a>
-                            </div>
-                        </header>
-                        <div class="cos_lookdetails_products_wrapper">
-                            <div class="cos_lookdetails_products_block">
-                                <div class="cos_lookdetails_products_block_item">
-                                    <h2>
-                                        블레이저
-                                    </h2>
-                                    <a href="">
-                                        <div class="cos_iobserver">
-                                            <picture>
-                                                <img src="./img/test01.webp" alt="">
-                                            </picture>
-                                        </div>
-                                    </a>
-
                                 </div>
-                            </div>
-                            <div class="cos_lookdetails_products_block">
-                                <div class="cos_lookdetails_products_block_column">
-                                    <div class="cos_lookdetails_products_block_item">
-                                        <h2>리본 모양 바레뜨</h2>
-                                        <a href="">
-                                            <div class="cos_iobserver">
-                                                <picture>
-                                                    <img src="./img/test02.webp" alt="">
-                                                </picture>
-                                            </div>
-                                        </a>
-                                    </div>
+                            </header>
+                            <div class="cos_lookdetails_products_wrapper">
+                                <div class="cos_lookdetails_products_block">
                                     <div class="cos_lookdetails_products_block_item">
                                         <h2>
-                                            오픈슈즈
+                                            블레이저
                                         </h2>
                                         <a href="">
                                             <div class="cos_iobserver">
                                                 <picture>
-                                                    <img src="./img/test03.webp" alt="">
+                                                    <img src="./img/test01.webp" alt="">
                                                 </picture>
                                             </div>
                                         </a>
+
                                     </div>
                                 </div>
-                                <div class="cos_lookdetails_products_block_column">
-                                    <div class="cos_lookdetails_products_block_item">
-                                        <h2>리본 모양 바레뜨</h2>
-                                        <a href="">
-                                            <div class="cos_iobserver">
-                                                <picture>
-                                                    <img src="./img/test04.webp" alt="">
-                                                </picture>
-                                            </div>
-                                        </a>
+                                <div class="cos_lookdetails_products_block">
+                                    <div class="cos_lookdetails_products_block_column">
+                                        <div class="cos_lookdetails_products_block_item">
+                                            <h2>리본 모양 바레뜨</h2>
+                                            <a href="">
+                                                <div class="cos_iobserver">
+                                                    <picture>
+                                                        <img src="./img/test02.webp" alt="">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="cos_lookdetails_products_block_item">
+                                            <h2>
+                                                오픈슈즈
+                                            </h2>
+                                            <a href="">
+                                                <div class="cos_iobserver">
+                                                    <picture>
+                                                        <img src="./img/test03.webp" alt="">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="cos_lookdetails_products_block_column">
+                                        <div class="cos_lookdetails_products_block_item">
+                                            <h2>리본 모양 바레뜨</h2>
+                                            <a href="">
+                                                <div class="cos_iobserver">
+                                                    <picture>
+                                                        <img src="./img/test04.webp" alt="">
+                                                    </picture>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -596,6 +593,7 @@
                 </div>
             </section>
 
+            <!-- magazine -->
             <section class="cos_section">
                 <div class="cos_container03">
 
@@ -751,14 +749,14 @@
             </div>
 
             <div class="pb_bottom_logo">
-                <img src="./img/cos_logo.svg" width="210" height="20" alt="">
+                <img src="./img/12cos_logo.png" width="210" height="20" alt="">
             </div>
 
             <p class="pb_copy_info">
                 <span>서울시 강남구 테헤란로 98길 12</span>
                 <span>TEL : 1800-2765</span>
-                FAX : 031-740-5559
-                <span>사업자등록번호 : 211-87-21455</span>
+                <span>FAX : 031-740-5559</span>
+                사업자등록번호 : 211-87-21455
                 <span>통신판매업 신고 : 2010-서울강남-01882</span>
                 대표이사 : 김형종 외 2인
             </p>
@@ -769,6 +767,7 @@
 </body>
 
 <script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/slick.min.js"></script>
 <script src="./js/main.js"></script>
 
 </html>
