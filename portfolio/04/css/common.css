@@ -7,8 +7,9 @@ font
 
 --------------------------------------
 */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css");
 
 /*
 -------------------------------------
@@ -33,12 +34,12 @@ body {
     margin: 0;
     padding: 0;
     font-size: 0.8rem;
-    font-family: 'Noto Sans KR';
+    font-family: 'Poppins';
     font-weight: normal;
     color: #333333;
     line-height: 1;
     overflow-x: hidden;
-    background-color: #111;
+    background-color: rgb(15, 15, 16);
 }
 
 ul,
@@ -64,6 +65,10 @@ figure {
     padding: 0;
     font-size: inherit;
     font-weight: inherit;
+}
+
+h1 {
+    font-weight: bold;
 }
 
 a {
@@ -98,6 +103,12 @@ select,
 input,
 button {
     vertical-align: middle;
+}
+
+button,
+input {
+    border: none;
+    outline: none;
 }
 
 b,
