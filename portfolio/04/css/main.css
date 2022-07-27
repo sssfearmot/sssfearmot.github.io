@@ -1,6 +1,18 @@
 :root {
+    --header-height: 3rem;
     --hue-color: 206;
-    --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
+    --text-gradient: linear-gradient(hsl(var(--hue-color), 3%, 50%), hsl(var(--hue-color), 4%, 8%));
+
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 5rem;
+    --bigger-font-size: 3.5rem;
+    --big-font-size: 2.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.125rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    --text-line-height: 2rem;
 }
 
 @media screen and (min-width: 968px) {
@@ -24,8 +36,13 @@ h3 {
 }
 
 body {
+    margin: var(--header-height) 0 0 0;
     font-size: var(--normal-font-size);
     color: rgb(189, 192, 194);
+}
+
+button {
+    cursor: pointer;
 }
 
 .section {
@@ -62,8 +79,8 @@ body {
 
 /* header */
 .header {
-    position: fixed;
     width: 100%;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
@@ -140,6 +157,10 @@ body {
     right: 1rem;
     color: #fff;
     cursor: pointer;
+}
+
+.show-menu {
+    top: 0;
 }
 
 .active-link {
@@ -473,11 +494,49 @@ body {
 }
 
 
+/* scroll up */
+.scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    background-color: rgb(24, 26, 27);
+    border-radius: .25rem;
+    padding: .45rem;
+    opacity: 9;
+    z-index: 10;
+    transition: 4s;
+}
+
+.scrollup:hover {
+    background-color: rgb(24, 26, 27);
+    opacity: 1;
+}
+
+.scrollup i {
+    color: #fff;
+    font-size: 1.35rem;
+}
+
+.show-scroll {
+    bottom: 5rem;
+}
 
 
+/* scroll bar */
+::-webkit-scrollbar {
+    width: .60rem;
+    border-radius: .5rem;
+}
 
+::-webkit-scrollbar-thumb {
+    background-color: rgb(39, 43, 44);
+    border-radius: .5rem;
+}
 
-
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(50, 56, 59);
+}
 
 
 
@@ -486,8 +545,8 @@ body {
 /* media */
 @media screen and (max-width: 340px) {
     .container {
-        margin-left: var(--mb-1);
-        margin-right: var(--mb-1);
+        margin-left: 1rem;
+        margin-right: 1rem;
     }
 
     .section_title {
@@ -662,11 +721,11 @@ body {
 
     .discount_animate h2 {
         font-size: var(--h2-font-size);
-        margin-bottom: var(--mb-1);
+        margin-bottom: 1rem;
     }
 
     .discount_animate p {
-        margin-bottom: var(--mb-2);
+        margin-bottom: 2rem;
     }
 
     .products_container {

@@ -19,7 +19,7 @@
                     <img src="./img/logo.png" alt="">
                 </a>
 
-                <div class="nav_menu">
+                <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list">
                         <li>
                             <a href="#home" class="nav_link active-link">Home</a>
@@ -35,22 +35,23 @@
                         </li>
                     </ul>
 
-                    <div class="nav_close">
+                    <div class="nav_close" id="nav-close">
                         <i class="xi-close"></i>
                     </div>
-
-                    <div class="nav_toggle">
-                        <i class="xi-border-all"></i>
-                    </div>
-
                 </div>
+
+                <div class="nav_toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+
+
             </nav>
         </header>
 
 
         <main class="main">
             <!-- home -->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="home_container container grid">
                     <div>
                         <img src="./img/home.png" alt="">
@@ -89,7 +90,7 @@
             </section>
 
             <!-- specs -->
-            <section class="specs section grid">
+            <section class="specs section grid" id="specs">
                 <h2 class="section_title">Specs</h2>
 
                 <div class="specs_container container grid">
@@ -127,7 +128,7 @@
 
 
             <!-- case -->
-            <section class="case section grid">
+            <section class="case section grid" id="case">
                 <h2 class="section_title">Case</h2>
 
                 <div class="case_container grid">
@@ -161,7 +162,7 @@
             </section>
 
             <!-- products -->
-            <section class="products section">
+            <section class="products section" id="products">
                 <h2 class="section_title">
                     Choose <br> Your Style
                 </h2>
@@ -309,9 +310,15 @@
             </p>
 
         </footer>
+
+        <a href="" class="scrollup">
+            <i class="ri-arrow-up-s-line"></i>
+        </a>
+
     </div>
 
     <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./js/main.js"></script>
 </body>
 
