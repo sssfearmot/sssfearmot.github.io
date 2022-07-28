@@ -505,7 +505,7 @@ button {
     padding: .45rem;
     opacity: 9;
     z-index: 10;
-    transition: 4s;
+    transition: .4s;
 }
 
 .scrollup:hover {
