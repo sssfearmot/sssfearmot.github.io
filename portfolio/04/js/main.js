@@ -79,6 +79,3 @@ $(function () {
     sr.reveal(`.case_data`)
 
 })
-
-
-history.pushState(state, title, url);
