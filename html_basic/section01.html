@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>상세페이지 01</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <style>
+    .t_b {
+      color: #0d6efd;
+    }
+
+    .container {
+      display: flex;
+      margin: 0 auto;
+      width: 1170px;
+      gap: 30px;
+    }
+
+    .inner {
+      margin: 0 auto;
+      width: 1170px;
+    }
+
+    .about {
+      padding: 100px 0px;
+      letter-spacing: -0.025em;
+      font-size: 15px;
+    }
+
+    .about img {
+      width: 100%;
+    }
+
+    .about h2 {
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .about h2::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 3px;
+      margin: 15px auto;
+      background: #0d6efd;
+    }
+
+    .about>p {
+      margin: 0 0 50px 0;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .about .container {
+      margin: 0 auto 100px auto;
+      justify-content: space-between;
+    }
+
+    .about .title {
+      font-size: 25px;
+      font-weight: 500;
+      margin: 0 0 50px 0;
+      line-height: 1.45;
+    }
+
+    .about .container p {
+      margin: 0 0 30px 0;
+      line-height: 1.45;
+    }
+
+    .about figure {
+      height: 400px;
+      overflow: hidden;
+    }
+
+    .about h3 {
+      position: relative;
+      font-size: 23px;
+      font-weight: 500;
+      padding: 0 0 0 10px;
+      margin:  0 0 30px 0;
+    }
+
+    .about h3::before {
+      position: absolute;
+      top: 3px;
+      left: 0;
+      content: "";
+      width: 3px;
+      height: 20px;
+      background: #0d6efd;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border-spacing: 0;
+      border-top: 3px solid #0d6efd;
+    }
+
+    table th {
+      padding: 15px;
+      text-align: left;
+      font-weight: 400;
+      background: #f7f7f7;
+    }
+
+    table td {
+      padding: 15px;
+      border-left: 1px solid #333;
+    }
+
+    table tr {
+      border-bottom: 1px solid #333
+    }
+
+    .responsive_table {
+      width: 100%;
+      overflow-x: scro;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="about">
+    <h2>
+      <span class="t_b">CEO'S</span> GREETINGS
+    </h2>
+    <p>새로운 미래를 열어가는 기업</p>
+    <div class="container">
+      <div class="des">
+        <p class="title">
+          웹서비스의 <span class="t_b">새로운 미래를</span> <br />
+          <span class="t_b">기업</span>이 만들어 가겠습니다.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ad, <br />
+          Lore ipsum dolor sit amet consectetur adipisicing elit. Ratione ad
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ad, dfaedf aeatgdf <br />
+          illo reiciendis quo facere suscipit qui. Voluptas aspernatur nam est? <br />
+          Lore ipsum dolor sit amet consectetur adipisicing elit. Ratione ad
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione ad, <br />
+          illo reiciendis quo facere suscipit qui. Voluptas aspernatur nam est?
+        </p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+      <figure>
+        <img src="./img/hd01.jpg" alt="">
+      </figure>
+    </div>
+
+    <div class="inner">
+      <h3>
+        주요현황
+      </h3>
+      <div class="responsive_table">
+        <table class="table">
+          <tbody>
+            <tr>
+              <th>주  소</th>
+              <td>부산시 동래구 사직동 1234-56 쌍둥이 돼지국밥 옆</td>
+            </tr>
+            <tr>
+              <th>전화번호</th>
+              <td>051-783-2318</td>
+
+
+
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+
+    </div>
+  </section>
+</body>
+
+</html>
