@@ -1,0 +1,96 @@
+.container {
+    max-width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.grid {
+    display: block;
+    gap: 1.5rem;
+}
+
+.section {
+    padding: 4.5rem 0 2rem;
+}
+
+.shape {
+    background-color: rgba(55, 74, 109, 0.5);
+    filter: blur(112px);
+    border-radius: 50%;
+}
+
+/* header */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.nav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    color: rgb(241, 242, 243);
+    display: inline-flex;
+}
+
+.nav_logo {
+    align-items: center;
+    column-gap: .25rem;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav_logo i {
+    font-size: 1.25rem;
+}
+
+.nav_logo:hover {
+    color: rgb(65, 120, 220);
+}
+
+.nav_menu ul {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    text-align: center;
+    row-gap: 3rem;
+    padding-top: 0;
+}
+
+.nav_menu ul a {
+    text-transform: initial;
+    color: rgb(241, 242, 243);
+    font-size: 1rem;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav_menu ul a:hover {
+    color: rgb(65, 120, 220);
+}
+
+
+/* home */
+.home {
+    position: relative;
+    overflow: hidden;
+}
+
+.home_container {
+    position: relative;
+    padding-top: 4rem;
+    row-gap: 3rem;
+}
+
+.home_data {
+    text-align: center;
+}
