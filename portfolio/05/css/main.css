@@ -5,12 +5,12 @@
 }
 
 .grid {
-    display: block;
+    display: grid;
     gap: 1.5rem;
 }
 
 .section {
-    padding: 4.5rem 0 2rem;
+    padding: 7rem 0 2rem;
 }
 
 .shape {
@@ -87,10 +87,253 @@
 
 .home_container {
     position: relative;
-    padding-top: 4rem;
+    padding-top: 2rem;
     row-gap: 3rem;
+}
+
+.home_img {
+    width: 380px;
+    justify-self: center;
 }
 
 .home_data {
     text-align: center;
+}
+
+.home_data h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: rgb(241, 242, 243);
+    margin-bottom: 1rem;
+}
+
+.home_data h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(241, 242, 243);
+    margin-bottom: .25rem;
+}
+
+.home_data h4 {
+    font-size: .875rem;
+    font-weight: 400;
+    color: #babec4;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+}
+
+.home_data h4 i {
+    color: #4178dc;
+}
+
+.home_car {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7rem;
+    margin-bottom: 2rem;
+}
+
+.home_car h3 {
+    font-size: .625rem;
+    font-weight: 400;
+    color: #888b91;
+}
+
+.home_car_data {
+    text-align: center;
+}
+
+.home_car h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #f1f2f3;
+    margin-bottom: .25rem;
+}
+
+.home_car_icon {
+    background: #111213;
+    border-radius: 50%;
+    padding: .376rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.home_container a {
+    position: relative;
+    border: 2px solid #08915f;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    font-size: .875rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.home_container a::before {
+    content: "";
+    border: 2px solid #02d98a;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 12px #02d98a;
+    transition: .3s;
+    animation: button 3s infinite;
+}
+
+.home .shape {
+    position: absolute;
+}
+
+
+/* about */
+.about_container {
+    row-gap: 6rem;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.about_group {
+    position: relative;
+}
+
+.about_group img {
+    width: 480px;
+    border-radius: .5rem;
+}
+
+.about_card {
+    position: absolute;
+    width: 198px;
+    right: 0;
+    bottom: -2.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    padding: 1rem 1.25rem;
+    text-align: center;
+    border-radius: 1.25rem;
+}
+
+.about_card h3 {
+    font-size: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+.about_card p {
+    font-size: .813rem;
+}
+
+.about_card h2 {
+    text-align: initial;
+    margin-bottom: 2rem;
+}
+
+.about_card p {
+    font-size: .813rem;
+}
+
+.about_data h2 {
+    text-align: initial;
+    margin-bottom: 2rem;
+}
+
+.about_data p {
+    margin-bottom: 2rem;
+}
+
+
+/* popular */
+.popular_container {
+    width: 875px;
+    padding-top: 3rem;
+}
+
+.popular_card {
+    position: relative;
+    width: 258px;
+    background: rgba(255, 255, 255, 0.1);
+    /* padding: 2rem 1.5rem 1.5rem; */
+    border-radius: 1.25rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+}
+
+.popular_card:hover .popular_card img {
+    transform: translateY(-0.25rem);
+}
+
+.popular_card h2, .popular_card h3, .popular_card img {
+    position: relative;
+}
+
+.popular_card h2 {
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+.popular_card h3 {
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.popular_card img {
+    width: 180px;
+    margin: .75rem 0 1.25rem 2rem;
+    transition: .3s;
+}
+
+.popular_data {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: .5rem 1.25rem;
+    margin-bottom: 2rem;
+}
+
+.popular_group {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .5rem;
+    font-size: .813rem;
+    color: #fff;
+}
+
+.popular_data i {
+    font-size: 1rem;
+}
+
+.popular_data h4 {
+    font-size: 1.25rem;
+}
+
+.popular_card button {
+    border: none;
+    outline: none;
+    padding: .75rem 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem 0 1rem 0;
+    cursor: pointer;
+}
+
+.popular_card button i {
+    font-size: 1.25rem;
+}
+
+.swiper-pagination-bullet {
+    background: rgb(186, 190, 196);
+}
+
+.swiper-pagination-bullet-active {
+    background-color: rgb(65, 120, 220);
 }
