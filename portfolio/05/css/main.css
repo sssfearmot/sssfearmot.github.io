@@ -197,6 +197,7 @@
 
 /* about */
 .about_container {
+    column-gap: 6rem;
     row-gap: 6rem;
     align-items: center;
     grid-template-columns: repeat(2, 1fr);
@@ -225,7 +226,9 @@
 
 .about_card h3 {
     font-size: 1.25rem;
+    font-weight: 600;
     margin-bottom: .5rem;
+    color: rgb(241, 242, 243);
 }
 
 .about_card p {
@@ -242,14 +245,29 @@
 }
 
 .about_data h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(241, 242, 243);
+    ;
     text-align: initial;
     margin-bottom: 2rem;
 }
 
 .about_data p {
-    margin-bottom: 2rem;
+    padding-right: 4rem;
+    margin-bottom: 3rem;
 }
 
+.about_data a {
+    display: inline-block;
+    background-color: rgb(65, 120, 220);
+    ;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: .3s;
+}
 
 /* popular */
 .popular_container {
@@ -257,11 +275,20 @@
     padding-top: 3rem;
 }
 
+.popular h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(241, 242, 243);
+    margin-bottom: 2.5rem;
+}
+
+
 .popular_card {
     position: relative;
-    width: 258px;
-    background: rgba(255, 255, 255, 0.1);
-    /* padding: 2rem 1.5rem 1.5rem; */
+    width: 228px;
+    background: rgb(17, 18, 19);
+    padding: 2rem 1.5rem 1.5rem;
     border-radius: 1.25rem;
     margin-bottom: 5rem;
     overflow: hidden;
@@ -271,7 +298,9 @@
     transform: translateY(-0.25rem);
 }
 
-.popular_card h2, .popular_card h3, .popular_card img {
+.popular_card h2,
+.popular_card h3,
+.popular_card img {
     position: relative;
 }
 
@@ -282,8 +311,14 @@
 
 .popular_card h3 {
     font-size: 1rem;
-    color: #fff;
+    color: rgb(186, 190, 196);
     font-weight: 400;
+}
+
+.popular_card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(241, 242, 243);
 }
 
 .popular_card img {
@@ -311,10 +346,6 @@
     font-size: 1rem;
 }
 
-.popular_data h4 {
-    font-size: 1.25rem;
-}
-
 .popular_card button {
     border: none;
     outline: none;
@@ -324,6 +355,14 @@
     bottom: 0;
     border-radius: 1rem 0 1rem 0;
     cursor: pointer;
+}
+
+.popular_card button {
+    display: inline-block;
+    background-color: rgb(65, 120, 220);
+    color: #fff;
+    font-size: 1rem;
+    transition: .3s;
 }
 
 .popular_card button i {
@@ -336,4 +375,220 @@
 
 .swiper-pagination-bullet-active {
     background-color: rgb(65, 120, 220);
+}
+
+/* features */
+.features {
+    position: relative;
+    overflow: hidden;
+}
+
+.features h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(241, 242, 243);
+    ;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.feature_container {
+    padding: 2rem 0 3rem;
+    grid-template-columns: 285px;
+    justify-content: center;
+}
+
+.feature_group {
+    position: relative;
+    display: grid;
+    z-index: 10;
+}
+
+.feature_group img {
+    width: 200px;
+    justify-self: center;
+}
+
+.features_card {
+    position: absolute;
+    width: 127px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px);
+    border-radius: 1.25rem;
+    padding: .75rem 2.5rem;
+    text-align: center;
+    color: rgb(241, 242, 243);
+    ;
+}
+
+.features_card:nth-child(1) {
+    top: 4rem;
+    left: -1rem;
+}
+
+.features_card:nth-child(2) {
+    top: 8rem;
+    right: -2.5rem;
+}
+
+.features_card:nth-child(3) {
+    left: 1.5rem;
+    bottom: 2rem;
+}
+
+.features_card h3 {
+    font-size: 1.25rem;
+    margin-bottom: .25rem;
+    color: rgb(241, 242, 243);
+    ;
+    font-weight: 600;
+}
+
+.features_card p {
+    font-size: .813rem;
+}
+
+.features_map {
+    position: absolute;
+    max-width: initial;
+    width: 650px;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(-22deg);
+}
+
+/* featured */
+.featured_container {
+    padding-top: 1rem;
+}
+
+.featured h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    color: rgb(241, 242, 243);
+}
+
+.featured_container ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-bottom: 3.5rem;
+}
+
+.featured_item {
+    width: 48px;
+    height: 48px;
+    border: none;
+    outline: none;
+    padding: .75rem;
+    border-radius: .75rem;
+    background-color: rgb(17, 18, 19);
+    ;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.featured_item img {
+    width: 1.5rem;
+}
+
+.featured_item span,
+.featured_item img {
+    opacity: .3;
+    transition: 0.3s;
+}
+
+.featured_item:hover {
+    background-color: rgb(65, 120, 220);
+    ;
+}
+
+.featured_item:hover span,
+.featured_item:hover img {
+    opacity: 1;
+}
+
+.featured_content {
+    grid-template-columns: repeat(3, 248px);
+    gap: 4rem;
+    justify-content: center;
+}
+
+.featured_card {
+    position: relative;
+    background-color: rgb(17, 18, 19);
+    padding: 2rem 1.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
+.featured_card:hover .featured_card img {
+    transform: translateX(-0.25rem);
+}
+
+.featured_card h2,
+.featured_card h3,
+.featured_card img {
+    position: relative;
+}
+
+.featured_card h2 {
+    font-size: 1.5rem;
+    margin-bottom: .25rem;
+}
+
+.featured_card h3 {
+    font-size: 1rem;
+    color: rgb(186, 190, 196);
+    font-weight: 400;
+}
+
+.featured_card img {
+    width: 180px;
+    margin: 1.5rem 0;
+    transition: .3s;
+}
+
+.featured_card h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: rgb(241, 242, 243);
+}
+
+.featured_card button {
+    border: none;
+    outline: none;
+    padding: .75rem 1rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 1rem 0 1rem 0;
+    cursor: pointer;
+}
+
+.featured_card button {
+    display: inline-block;
+    background-color: rgb(65, 120, 220);
+    color: #fff;
+    font-size: 1rem;
+    transition: .3s;
+}
+
+.featured_card button i {
+    font-size: 1.25rem;
+}
+
+.active-featured {
+    background-color: rgb(65, 120, 220);
+}
+
+.active-featured span,
+.active-featured img {
+    opacity: 1;
 }

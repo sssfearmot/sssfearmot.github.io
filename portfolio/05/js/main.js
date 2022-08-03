@@ -1,6 +1,6 @@
 var swiperPopular = new Swiper('.popular_container', {
     loop: true,
-    spaceBetween: 24,
+    spaceBetween: 48,
     slidesPerView: "3",
     grabCursor: true,
 
@@ -9,3 +9,20 @@ var swiperPopular = new Swiper('.popular_container', {
         dynamicBullets: true,
     },
 });
+
+let mixerFeatured = mixitup('.featured_content', {
+    selectors: {
+        target: '.featured_card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+const linkFeatured = document.querySelectorAll('.featured_item')
+
+function activeFeatured() {
+    linkFeatured.forEach(l => l.classList.remove('active-featured'))
+    this.classList.add('active-featured')
+}
+linkFeatured.forEach(l => l.addEventListener('click', activeFeatured))
