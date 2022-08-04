@@ -194,6 +194,15 @@
     position: absolute;
 }
 
+@keyframes button {
+    0% {
+        box-shadow: 0 0 12 #02d98a;
+    }
+    50% {
+        box-shadow: 0 0 24px #02d98a;
+    }
+}
+
 
 /* about */
 .about_container {
@@ -275,7 +284,7 @@
     padding-top: 3rem;
 }
 
-.popular h2 {
+.popular>h2 {
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
@@ -286,12 +295,12 @@
 
 .popular_card {
     position: relative;
-    width: 228px;
     background: rgb(17, 18, 19);
     padding: 2rem 1.5rem 1.5rem;
     border-radius: 1.25rem;
     margin-bottom: 5rem;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .popular_card:hover .popular_card img {
@@ -464,7 +473,7 @@
     padding-top: 1rem;
 }
 
-.featured h2 {
+.featured>h2 {
     font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
@@ -591,4 +600,65 @@
 .active-featured span,
 .active-featured img {
     opacity: 1;
+}
+
+/* offer */
+.offer {
+    position: relative;
+}
+
+.offer_container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: initial;
+    column-gap: 5rem;
+    align-items: center;
+    padding-bottom: 2rem;
+    justify-content: center;
+}
+
+.offer_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.offer_data {
+    position: relative;
+    margin-bottom: 0;
+    text-align: initial;
+}
+
+.offer_data h2 {
+    text-align: initial;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f1f2f3;
+    margin-bottom: 2rem;
+}
+
+.offer_data p {
+    padding-right: 6rem;
+    margin-bottom: 3rem;
+}
+
+.offer_img {
+    position: relative;
+    max-width: initial;
+    width: 450px;
+    bottom: initial;
+    right: initial;
+}
+
+.offer_data a {
+    display: inline-block;
+    background-color: #4178dc;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: .3s;
 }

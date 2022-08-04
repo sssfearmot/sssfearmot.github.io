@@ -1,4 +1,4 @@
-var swiperPopular = new Swiper('.popular_container', {
+let swiperPopular = new Swiper('.popular_container', {
     loop: true,
     spaceBetween: 48,
     slidesPerView: "3",
