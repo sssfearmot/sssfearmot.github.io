@@ -1,3 +1,4 @@
+// swiper
 let swiperPopular = new Swiper('.popular_container', {
     loop: true,
     spaceBetween: 48,
@@ -10,6 +11,7 @@ let swiperPopular = new Swiper('.popular_container', {
     },
 });
 
+// mixitup
 let mixerFeatured = mixitup('.featured_content', {
     selectors: {
         target: '.featured_card'
@@ -19,6 +21,7 @@ let mixerFeatured = mixitup('.featured_content', {
     }
 });
 
+// active-featured
 const linkFeatured = document.querySelectorAll('.featured_item')
 
 function activeFeatured() {
@@ -26,3 +29,31 @@ function activeFeatured() {
     this.classList.add('active-featured')
 }
 linkFeatured.forEach(l => l.addEventListener('click', activeFeatured))
+
+// change background header
+function scrollHeader() {
+    const header = document.querySelector('.header')
+    if (this.scrollY >= 50) header.classList.add('scroll-header');
+    else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+
+// // active link
+// const section = document.querySelectorAll('section[id]')
+
+// function scrollActive() {
+//     const scrollY = window.pageYOffset
+
+//     section.forEach(current => {
+//         const sectionHeight = current.offsetHeight,
+//         sectionTop = current.offsetTop - 58,
+//         sectionId = current.getAttribute('id')
+
+//         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+//             document.querySelector('.nav_menu a [hredf*=' + sectionId + ']').classList.add('active-link')
+//         }else{
+//             document.querySelector('.nav_menu a [href*=' + sectionId + ']').classList.remove('active-link')
+//         }
+//     })
+// }
+// window.addEventListener('scroll', scrollActive)

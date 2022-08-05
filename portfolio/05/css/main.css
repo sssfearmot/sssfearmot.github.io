@@ -29,6 +29,10 @@
     z-index: 100;
 }
 
+.scroll-header {
+    background-color: rgb(10, 10, 11);
+}
+
 .nav {
     height: 5rem;
     display: flex;
@@ -78,6 +82,10 @@
     color: rgb(65, 120, 220);
 }
 
+.active-link {
+    color: rgb(65, 120, 220);
+}
+
 
 /* home */
 .home {
@@ -107,14 +115,15 @@
     margin-bottom: 1rem;
 }
 
-.home_data h3 {
+.home_data strong {
+    display: block;
     font-size: 1.25rem;
     font-weight: 600;
     color: rgb(241, 242, 243);
     margin-bottom: .25rem;
 }
 
-.home_data h4 {
+.home_data p {
     font-size: .875rem;
     font-weight: 400;
     color: #babec4;
@@ -123,7 +132,7 @@
     column-gap: .25rem;
 }
 
-.home_data h4 i {
+.home_data p i {
     color: #4178dc;
 }
 
@@ -135,7 +144,7 @@
     margin-bottom: 2rem;
 }
 
-.home_car h3 {
+.home_car p {
     font-size: .625rem;
     font-weight: 400;
     color: #888b91;
@@ -190,8 +199,42 @@
     animation: button 3s infinite;
 }
 
-.home .shape {
+.shap_big {
     position: absolute;
+    background-color: rgba(55, 74, 109, 0.5);
+    filter: blur(112px);
+    border-radius: 50%;
+    width: 500px;
+    height: 500px;
+    left: -9rem;
+    top: -4rem;
+}
+
+.shape_small {
+    position: absolute;
+    background-color: rgba(55, 74, 109, 0.5);
+    filter: blur(112px);
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    right: -10rem;
+    bottom: 3rem;
+}
+
+.shape_smaller {
+    position: absolute;
+    background-color: rgba(55, 74, 109, 0.5);
+    filter: blur(64px);
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    top: -2.5rem;
+    left: -2.5rem;
+}
+
+.featured_card .shape_smaller {
+    inset: 0;
+    margin: auto;
 }
 
 @keyframes button {
@@ -304,28 +347,30 @@
     box-sizing: border-box;
 }
 
-.popular_card:hover .popular_card img {
+.popular_card:hover.popular_card>img {
     transform: translateY(-0.25rem);
 }
 
 .popular_card h2,
-.popular_card h3,
+.popular_card p,
 .popular_card img {
     position: relative;
 }
 
 .popular_card h2 {
     font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(241, 242, 243);
     margin-bottom: .25rem;
 }
 
-.popular_card h3 {
+.popular_card p {
     font-size: 1rem;
     color: rgb(186, 190, 196);
     font-weight: 400;
 }
 
-.popular_card h4 {
+.popular_card h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: rgb(241, 242, 243);
@@ -431,19 +476,19 @@
     ;
 }
 
-.features_card:nth-child(1) {
+.features_card:nth-of-type(1) {
     top: 4rem;
     left: -1rem;
 }
 
-.features_card:nth-child(2) {
+.features_card:nth-of-type(2) {
     top: 8rem;
     right: -2.5rem;
 }
 
-.features_card:nth-child(3) {
-    left: 1.5rem;
-    bottom: 2rem;
+.features_card:nth-of-type(3) {
+    bottom: 7rem;
+    left: -1rem;
 }
 
 .features_card h3 {
@@ -538,22 +583,24 @@
     border-radius: 1rem;
 }
 
-.featured_card:hover .featured_card img {
+.featured_card:hover.featured_card>img {
     transform: translateX(-0.25rem);
 }
 
 .featured_card h2,
-.featured_card h3,
+.featured_card p,
 .featured_card img {
     position: relative;
 }
 
 .featured_card h2 {
     font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(241, 242, 243);
     margin-bottom: .25rem;
 }
 
-.featured_card h3 {
+.featured_card p {
     font-size: 1rem;
     color: rgb(186, 190, 196);
     font-weight: 400;
@@ -565,7 +612,7 @@
     transition: .3s;
 }
 
-.featured_card h4 {
+.featured_card h3 {
     font-size: 1.25rem;
     font-weight: 600;
     color: rgb(241, 242, 243);
