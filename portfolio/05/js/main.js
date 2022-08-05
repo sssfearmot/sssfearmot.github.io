@@ -57,3 +57,19 @@ window.addEventListener('scroll', scrollHeader)
 //     })
 // }
 // window.addEventListener('scroll', scrollActive)
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true
+})
+
+
+sr.reveal(`.home_data h2`)
+sr.reveal(`.home_data strong`,{delay: 500})
+sr.reveal(`.home_data p`, {delay: 600})
+sr.reveal(`.home_container img`, {delay: 800})
+sr.reveal(`.home_car_data`, {delay: 900, interval: 100, origin: 'bottom'})
+sr.reveal(`.home_container a`, {delay: 1000, origin: 'bottom'})
