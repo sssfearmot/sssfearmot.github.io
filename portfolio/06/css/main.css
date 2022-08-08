@@ -1,0 +1,50 @@
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #F2F2F2;
+}
+
+.nav {
+    max-width: 1024px;
+    grid-template-columns: 100%;
+    column-gap: 2rem;
+    width: calc(100% - 2rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_toggle {
+    display: block;
+}
+
+.nav_menu {
+    margin-left: auto;
+}
+
+.nav_menu ul {
+    display: flex;
+}
+
+.nav_menu ul li {
+    margin-left: 3rem;
+    margin-bottom: 0;
+}
+
+.header a {
+    font-weight: 600;
+}
+
+.nav_toggle, .nav_shop {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
