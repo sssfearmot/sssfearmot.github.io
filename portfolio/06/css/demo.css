@@ -9,7 +9,6 @@
     opacity: 1;
     width: 100%;
     height: 100%;
-    
     transform-origin: 50% 50%;*/
 }
 
@@ -21,7 +20,7 @@ canvas {
 }
 
 .content nav a {
-    color: var(--color-link-hover);
+    color: #fff;
     text-decoration: none;
     /*margin-right: 14px;*/
     position: absolute;
@@ -31,7 +30,7 @@ canvas {
 
 .content nav a:hover,
 .content nav a:focus {
-    color: var(--color-link-hover);
+    color: #fff;
     outline: none;
 }
 
@@ -39,7 +38,7 @@ canvas {
     position: absolute;
     width: 100%;
     height: 1px;
-    background-color: var(--color-link-hover);
+    background-color: #fff;
     display: block;
     margin-top: 7px;
     -moz-transition: width 0.3s ease;
@@ -59,28 +58,11 @@ canvas {
     left: 10vw;
 }
 
-.notice {
-    text-decoration: none;
-    /*margin-right: 14px;*/
-    position: absolute;
-    bottom: 3rem;
-    left: 3rem;
-    z-index: 1;
-    color: var(--color-link);
-}
-
 @media screen and (max-width: 53em) {
 
     nav a {
         top: auto;
         bottom: 3rem;
-    }
-
-    .notice {
-        bottom: auto;
-        top: 2rem;
-        left: 10vw;
-        left: 3rem;
     }
 
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,15 +13,17 @@
     <link rel="stylesheet" href="./css/demo.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body>
     <!-- header -->
     <header class="header">
         <nav class="nav">
+
+            <a href="">LOGO</a>
+
             <div class="nav_toggle">
                 <i class="bxs-frid"></i>
             </div>
-
-            <a href="">LOGO</a>
 
             <div class="nav_menu">
                 <ul>
@@ -33,36 +36,142 @@
             </div>
 
             <div class="nav_shop">
-                <i></i>
+                <i class="bx-shopping-bag"></i>
             </div>
         </nav>
     </header>
 
     <main>
         <!-- home -->
-        <div class="message">Some message for mobile (if needed).</div>
-		<div class="frame">
-			<div class="frame__demos">
-				<a href="index.html" class="frame__demo frame__demo--current">demo 1</a>
-				<a href="index2.html" class="frame__demo">demo 2</a>
-				<a href="index3.html" class="frame__demo">demo 3</a>
-			</div>
-		</div>
-		<div class="content">
-			<div id="rgbKineticSlider" class="rgbKineticSlider"></div>
-			<nav>
-				<a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
-				<a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
-			</nav>
-			<span class="notice">Swipe left... or right</span>
-		</div>
+        <section class="home">
+            <div class="content">
+                <div id="rgbKineticSlider" class="rgbKineticSlider"></div>
+                <nav>
+                    <a href="#" class="main-nav prev" data-nav="previous">Prev <span></span></a>
+                    <a href="#" class="main-nav next" data-nav="next">Next <span></span></a>
+                </nav>
+            </div>
+        </section>
 
+        <section class="featured">
+            <div class="container">
+                <h2>Todays Top Picks</h2>
+
+                <nav>
+                    <a href="index.html" class="brand">Shoezz</a>
+                    <a href="#"><span class="material-icons-outlined">
+                            shopping_bag
+                        </span></a>
+                </nav>
+                <main>
+                    <div>
+                        <span>MENS-</span>
+                        <h1 class="title">
+                            <span class="titleText">Red Nike Jordan Max Aura 3</span>
+                            <span class="titleOverlay"></span>
+                        </h1>
+                        <p class="description">
+                            Lorem ipsum dolor sit ammet
+                        </p>
+                        <div class="thumbs">
+                            <img src="img/thumbs/shoe1-1/img1.jpg" class="thumb-active" />
+                            <img src="img/thumbs/shoe1-1/img2.jpg" />
+                            <img src="img/thumbs/shoe1-1/img3.jpg" />
+                            <img src="img/thumbs/shoe1-1/img4.jpg" />
+                        </div>
+                    </div>
+                    <div class="showcase">
+                        <div>
+                            <img src="img/showcase/shoe1-1/img1.png" />
+                            <div class="shadow"></div>
+                        </div>
+                    </div>
+                    <div class="options">
+                        <h4>Size</h4>
+                        <ul class="sizes">
+                            <li class="size-active">37</li>
+                            <li>38</li>
+                            <li>39</li>
+                            <li>40</li>
+                            <li>41</li>
+                        </ul>
+                        <div class="reviews">
+                            <h4>Reviews</h4>
+                            <ul class="stars">
+                                <li><span class="material-icons-outlined">
+                                        star
+                                    </span></li>
+                                <li><span class="material-icons-outlined">
+                                        star
+                                    </span></li>
+                                <li><span class="material-icons-outlined">
+                                        star
+                                    </span></li>
+                                <li><span class="material-icons-outlined">
+                                        star
+                                    </span></li>
+                                <li><span class="material-icons-outlined">
+                                        star_outline
+                                    </span></li>
+                            </ul>
+                        </div>
+                        <div class="pricing">
+                            <h4>Price</h4>
+                            <h4 class="price">$150</h4>
+                        </div>
+                        <div class="colors">
+                            <h4>Colors</h4>
+                            <ul>
+                                <li class="color color-active"></li>
+                                <li class="color"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </main>
+
+                <section class="bar-bottom">
+                    <div>
+                        <a href="#">
+                            <span class="material-icons-outlined">
+                                play_arrow
+                            </span>
+                            <span>Play Video</span>
+                        </a>
+                    </div>
+                    <div class="controls">
+                        <div class="arrows">
+                            <span class="material-icons-outlined arr-left">
+                                arrow_right_alt
+                            </span>
+                            <span class="material-icons-outlined arr-right">
+                                arrow_right_alt
+                            </span>
+                        </div>
+                        <div>
+                            <small class="shoe-num">01</small>
+                            <div class="pagination">
+                                <span class="pag pag-active"></span>
+                                <span class="pag"></span>
+                                <span class="pag"></span>
+                            </div>
+                            <small class="shoe-total">03</small>
+                        </div>
+                    </div>
+                    <div class="cart">
+                        <button>Add To Cart</button>
+                        <span class="material-icons-outlined">
+                            favorite_border
+                        </span>
+                    </div>
+                </section>
+            </div>
+        </section>
     </main>
 
     <footer>
 
     </footer>
-    
+
     <script src="./js/imagesLoaded.pkgd.min.js"></script>
     <script src="./js/pixi.min.js"></script>
     <script src="./js/pixi-filters.min.js"></script>
@@ -70,4 +179,5 @@
     <script src="./js/rgbKineticSlider.js"></script>
     <script src="./js/main.js"></script>
 </body>
+
 </html>
