@@ -1,14 +1,14 @@
 const images = [
     "img/275155267037211.png",
-    "img/nature-02.jpg",
-    "img/nature-03.jpg",
+    "img/2536954357884B6335.jpg",
+    "img/puma_logo.svg",
 ];
 
 // content setup
 const texts = [
     ["NIKE", "Surface gravity‎: ‎9.807 m/s²"],
-    ["Mars", "Surface gravity‎: ‎3.711 m/s²"],
-    ["Venus", "Surface gravity‎: ‎8.87 m/s²"],
+    [""],
+    [""],
 ]
 
 rgbKineticSlider = new rgbKineticSlider({

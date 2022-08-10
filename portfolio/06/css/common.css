@@ -8,6 +8,8 @@ font
 --------------------------------------
 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 @import url('https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css');
 
@@ -26,18 +28,17 @@ html {
 *,
 *:before,
 *:after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     outline: none;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-size: 0.8rem;
     font-family: 'Noto Sans KR';
     font-weight: normal;
     color: #333333;
-    line-height: 1;
+    background: #f1f1f1;
     overflow-x: hidden;
 }
 
@@ -63,7 +64,7 @@ figure {
     margin: 0;
     padding: 0;
     font-size: inherit;
-    font-weight: inherit;
+    /* font-weight: inherit; */
 }
 
 a {
@@ -74,7 +75,7 @@ a {
 img {
     border: 0;
     vertical-align: middle;
-    font-size: 0;
+    /* font-size: 0; */
     max-width: 100%;
 }
 
