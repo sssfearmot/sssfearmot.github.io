@@ -1,12 +1,14 @@
 const images = [
     "img/275155267037211.png",
-    "img/2536954357884B6335.jpg",
+    "img/wallpapertip_adidas-wallpaper_43274.jpg",
     "img/puma_logo.svg",
+    "img/8ca7677493042868afc2a9bc78246b38.jpg",
 ];
 
 // content setup
 const texts = [
     ["NIKE", "Surface gravity‎: ‎9.807 m/s²"],
+    [""],
     [""],
     [""],
 ]
