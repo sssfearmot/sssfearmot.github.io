@@ -1,12 +1,8 @@
 (function () {
 
-    window.rgbKineticSlider = function (options) {
-
-        ///////////////////////////////    
+    window.mainSlider = function (options) {
 
         //  OPTIONS
-
-        /////////////////////////////// 
 
         options = options || {};
         options.slideImages = options.hasOwnProperty('slideImages') ? options.slideImages : [];
@@ -47,11 +43,7 @@
         options.imagesRgbIntensity = options.hasOwnProperty('imagesRgbIntensity') ? options.imagesRgbIntensity : 0.9;
         options.navImagesRgbIntensity = options.hasOwnProperty('navImagesRgbIntensity') ? options.navImagesRgbIntensity : 100;
 
-        ///////////////////////////////    
-
         //  PIXI letS
-
-        ///////////////////////////////
 
         let imgWidth = 1920;
         let imgHeight = 1080;
@@ -65,7 +57,7 @@
             resolution: devicePixelRatio,
         });
 
-        const canvas = document.getElementById("rgbKineticSlider");
+        const canvas = document.getElementById("mainSlider");
         const stage = new PIXI.Container();
         const mainContainer = new PIXI.Container();
         const imagesContainer = new PIXI.Container();
@@ -123,11 +115,7 @@
             s.parentNode.insertBefore(wf, s);
         }());
 
-        ///////////////////////////////    
-
         //  Build pixi scene
-
-        ///////////////////////////////
 
         function build_scene() {
 
@@ -211,47 +199,32 @@
             render.add(function (delta) {
                 renderer.render(stage);
             });
-        }
-
-
-        ///////////////////////////////    
+        } 
 
         //  Build pixi img elements
-
-        ///////////////////////////////
 
         function build_imgs() {
 
             for (let i = 0; i < options.slideImages.length; i++) {
 
-                // get texture from image
                 texture = new PIXI.Texture.from(options.slideImages[i]);
-                // set sprite from texture
                 imgSprite = new PIXI.Sprite(texture);
 
-                // center img
                 imgSprite.anchor.set(0.5);
                 imgSprite.x = renderer.width / 2;
                 imgSprite.y = renderer.height / 2;
 
-                // hide all imgs
                 TweenMax.set(imgSprite, {
                     alpha: 0
                 });
 
-                // add img to the canvas
                 imagesContainer.addChild(imgSprite);
             }
 
             slideImages = imagesContainer.children;
-        }
-
-
-        ///////////////////////////////    
+        }  
 
         //  Build pixi texts elements
-
-        ///////////////////////////////
 
         let titleSize;
         let subtitleSize;
@@ -307,14 +280,12 @@
                             letterSpacing: options.textTitleLetterspacing,
                         });
 
-                        // texts centering
                         textTitles.anchor.set(0.5);
                         textTitles.x = renderer.width / 2;
                         textTitles.y = renderer.height / 2;
 
                         textsContainer.addChild(textTitles);
 
-                        // hide all titles on init
                         TweenMax.set(textTitles, {
                             alpha: 0
                         });
@@ -324,18 +295,15 @@
                             textTitles.interactive = true;
                             textTitles.buttonMode = true;
 
-                            // Pointers normalize touch and mouse
                             textTitles.on('pointerdown', onClick);
 
                             function onClick() {
-                                // do something on click
                             }
                         }
                     }
 
                     slideTexts = textsContainer.children;
 
-                    // build subtitles
                     if (options.textsSubTitleDisplay == true) {
 
                         for (let i = 0; i < options.itemsTitles.length; i++) {
@@ -367,13 +335,11 @@
                                 letterSpacing: options.textSubTitleLetterspacing,
                             });
 
-                            // texts centering
                             textTitles2.anchor.set(0.5);
                             textTitles2.x = textTitles.x;
                             textTitles2.y = textTitles.y + subtitleOffsetTop;
                             textsSubContainer.addChild(textTitles2);
 
-                            // hide all subtitles on init
                             TweenMax.set(textTitles2, {
                                 alpha: 0
                             });
@@ -384,28 +350,19 @@
                 }
             }
 
-        }
+        } 
 
-        ///////////////////////////////    
-
-        //  Slide transition effect
-
-        ///////////////////////////////
 
         function slideTransition(next) {
 
-            // center displacement
             dispSprite.anchor.set(0.5);
             dispSprite.x = renderer.view.width / 2;
             dispSprite.y = renderer.view.height / 2;
 
-            // set timeline with callbacks
             timelineTransition = new TimelineMax({
                 onStart: function () {
 
-                    // update playing flag
                     is_playing = true;
-                    // update draging flag
                     is_swipping = false;
 
                     dispSprite.rotation = 0;
@@ -413,7 +370,6 @@
 
                 onComplete: function () {
 
-                    // reset rgb values
                     if (options.textsRgbEffect == true) {
                         splitRgb.red = [0, 0];
                         splitRgb.green = [0, 0];
@@ -427,15 +383,11 @@
                     }
 
 
-                    // update flags
                     is_playing = false;
                     is_swipping = false;
 
-                    // after the first transition
-                    // will prevent first animation transition
                     is_loaded = true
 
-                    // set new index
                     currentIndex = next;
                 },
 
@@ -446,19 +398,14 @@
 
                     if (is_loaded === true) {
 
-                        // rgb shift effect for navigation transition
-                        // if text rgb effect is enable
+                       
                         if (options.textsRgbEffect == true) {
 
-                            // on first half of transition
-                            // match splitRgb values with timeline progress / from 0 to x
                             if (timelineTransition.progress() < 0.5) {
                                 splitRgb.red = [timelineTransition.progress() * options.navTextsRgbIntensity, 0];
                                 splitRgb.green = [0, 0];
                                 splitRgb.blue = [(- (timelineTransition.progress())), 0];
                             }
-                            // on second half of transition
-                            // match splitRgb values with timeline progress / from x to 0
                             else {
                                 splitRgb.red = [-(options.navTextsRgbIntensity - timelineTransition.progress() * options.navTextsRgbIntensity), 0];
                                 splitRgb.green = [0, 0];
@@ -466,19 +413,14 @@
                             }
                         }
 
-                        // if img rgb effect is enable
                         if (options.imagesRgbEffect == true) {
 
-                            // on first half of transition
-                            // match splitRgb values with timeline progress / from 0 to x
                             if (timelineTransition.progress() < 0.5) {
                                 splitRgbImgs.red = [-timelineTransition.progress() * options.navImagesRgbIntensity, 0];
                                 splitRgbImgs.green = [0, 0];
                                 splitRgbImgs.blue = [(timelineTransition.progress()), 0];
                             }
 
-                            // on second half of transition
-                            // match splitRgb values with timeline progress / from x to 0
                             else {
                                 splitRgbImgs.red = [-(options.navImagesRgbIntensity - timelineTransition.progress() * options.navImagesRgbIntensity), 0];
                                 splitRgbImgs.green = [0, 0];
@@ -490,7 +432,6 @@
                 }
             });
 
-            // make sure timeline is finish
             timelineTransition.clear();
             if (timelineTransition.isActive()) {
                 return;
@@ -498,16 +439,13 @@
 
             var scaleAmp;
 
-            // prevent first animation transition
             if (is_loaded === false) {
                 scaleAmp = 0;
             }
-            // the first transition is done > applly effect
             else {
                 scaleAmp = options.transitionScaleAmplitude;
             }
 
-            // if titles and subtitles are active
             if ((options.textsSubTitleDisplay == true) && (options.textsDisplay == true) && (options.itemsTitles.length > 0)) {
 
                 timelineTransition
@@ -531,7 +469,6 @@
                     }, options.slideTransitionDuration);
             }
 
-            // if subtitles inactive and title active
             else if ((options.textsSubTitleDisplay == false) && (options.textsDisplay == true) && (options.itemsTitles.length > 0)) {
 
                 timelineTransition
@@ -578,11 +515,7 @@
             }
         };
 
-        ///////////////////////////////    
-
         //  Mouse move event
-
-        ///////////////////////////////
 
         function cursorInteractive() {
 
@@ -607,12 +540,7 @@
             mainLoop();
         }
 
-
-        ///////////////////////////////    
-
         //  Main loop for animations
-
-        ///////////////////////////////
 
         function mainLoop() {
 
@@ -692,13 +620,9 @@
                     splitRgbImgs.blue = [(-kineX * options.imagesRgbIntensity), 0];
                 }
             }
-        }
-
-        ///////////////////////////////    
+        }  
 
         //  Drag / swipe event
-
-        ///////////////////////////////
 
         function swipe() {
 
@@ -812,11 +736,7 @@
             }
         }
 
-        ///////////////////////////////    
-
         //  Texts tilt effect
-
-        ///////////////////////////////
 
         function tilt(currentIndex, kineX, kineY) {
 
@@ -839,13 +759,9 @@
                     }
                 }
             }
-        }
-
-        ///////////////////////////////    
+        }   
 
         //  navigation 
-
-        ///////////////////////////////
 
         if (options.nav == true) {
 
@@ -857,7 +773,6 @@
 
                 navItem.onclick = function (event) {
 
-                    // Make sure the previous transition has ended
                     if (is_playing) {
                         return false;
                     }
@@ -885,33 +800,23 @@
                     return false;
                 }
             }
-        }
+        } 
 
-        ///////////////////////////////    
-
-        //  init 
-
-        ///////////////////////////////
 
         function init() {
 
-            // re init renderer on ready
             renderer.resize(imgWidth, imgHeight);
 
-            // construct
             build_scene();
             build_imgs();
             resizeTexts();
 
-            // interactivity
             cursorInteractive();
             swipe();
             slideTransition(currentIndex);
 
-            // Listen for window resize events
             window.addEventListener('resize', resizeTexts);
             function resizeTexts() {
-                // build_imgs();
                 if (window.innerWidth < 768) {
                     build_texts();
                     renderer.render(stage);
@@ -925,17 +830,14 @@
             }
         };
 
-        // Load them google fonts before starting...!
         window.WebFontConfig = {
             google: {
                 families: options.googleFonts
             },
 
             active: function () {
-                // load the stage images 
                 imagesLoaded(images, function () {
                     document.body.classList.remove('loading');
-                    // init slider
                     init();
                 });
             }

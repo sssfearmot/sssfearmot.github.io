@@ -1,9 +1,8 @@
 <? include 'head.php' ?>
 <? 
-$sum = 2;
+$num = 2;
 ?>
-
-<article>
-    서버02
-</article>
+    <article>
+    나는 서버02
+    </article>
 <? include 'tail.php' ?>

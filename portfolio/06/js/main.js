@@ -1,19 +1,21 @@
 const images = [
-    "img/275155267037211.png",
-    "img/wallpapertip_adidas-wallpaper_43274.jpg",
-    "img/puma_logo.svg",
-    "img/8ca7677493042868afc2a9bc78246b38.jpg",
+    "img/nike.png",
+    "img/adidas.png",
+    "img/puma.png",
+    "img/converse.png",
+    "img/newbalance.png",
 ];
 
 // content setup
 const texts = [
-    ["NIKE", "Surface gravity‎: ‎9.807 m/s²"],
+    [""],
+    [""],
     [""],
     [""],
     [""],
 ]
 
-rgbKineticSlider = new rgbKineticSlider({
+mainSlider = new mainSlider({
 
     slideImages: images, // array of images > must be 1920 x 1080
     itemsTitles: texts, // array of titles / subtitles

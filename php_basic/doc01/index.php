@@ -1,6 +1,5 @@
 <? include 'head.php' ?>
-
-<main>
-    main
-</main>
+    <main>
+    나는 메인
+    </main>
 <? include 'tail.php' ?>

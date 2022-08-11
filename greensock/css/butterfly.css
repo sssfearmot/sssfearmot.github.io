@@ -1,0 +1,36 @@
+html{
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    height: 100%;
+    width: 100%;
+    background: #b5b5b5;
+    margin:0;
+    overflow:hidden;
+  }
+  .hidden{visibility: hidden;}
+  
+  .sound{
+    position: absolute;
+    left: calc(100% - 80px);
+    font-family: sans-serif;
+    color:grey;
+    cursor: pointer;
+  }
+  
+  #airfield{
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 0;
+    top:10%;
+  }
+  .birds {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 220px;
+    z-index:100;
+  }
