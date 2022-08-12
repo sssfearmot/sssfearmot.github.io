@@ -1,0 +1,213 @@
+.gnb {
+    position: fixed;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 999;
+}
+
+.gnb ul>li {
+    width: 50px;
+}
+
+.gnb ul>li a {
+    position: relative;
+    display: block;
+    height: 14px;
+    font-size: 0;
+}
+
+.gnb ul>li a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 50%;
+    height: 1px;
+    background: #333;
+    transition: width 0.5s;
+}
+
+.gnb ul>li a.w::after {
+    background: #fff;
+}
+
+.gnb ul>li.on a::after {
+    width: 100%;
+}
+
+.coverBtn {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    z-index: 999;
+    width: 36px;
+    height: 36px;
+    background: #333;
+    font-size: 0;
+}
+
+.coverBtn::before,
+.coverBtn::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.coverBtn::before {
+    top: 8px;
+}
+
+.coverBtn::after {
+    bottom: 8px;
+}
+
+.coverBtn.on::before {
+opacity: 0;
+}
+
+.coverBtn.on::after {
+opacity: 0;
+}
+
+.coverBtn button {
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+}
+
+.coverBtn button::before,
+.coverBtn button::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    left: 5px;
+    right: 5px;
+    height: 2px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+
+.coverBtn.on button::before {
+    transform: rotate(45deg);
+}
+
+.coverBtn.on button::after {
+    transform: rotate(-45deg);
+}
+
+.contnet {
+    display: flex;
+    width: 1400px;
+    margin: 0 auto;
+    gap: 100px;
+}
+
+.section .dec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: translateX(500px);
+}
+
+.section.on .dec {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.5s;
+}
+
+.section .pic {
+    opacity: 0;
+    transform: translateX(-500px);
+}
+
+.section.on .pic {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.5s 0.5s;
+}
+
+.portfolio01 .dec {
+    order: -1;
+}
+
+.portfolio02 {
+    background: url(../img/nature-02.jpg) no-repeat fixed center center/cover;
+}
+
+.copyright {
+    padding: 50px 0;
+    color: #fff;
+    background: #333;
+}
+
+.copyright .copy {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.totop a {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    z-index: 999;
+}
+
+.contact {
+    position: fixed;
+    bottom: 100px;
+    left: 100px;
+    width: 400px;
+
+    display: flex;
+}
+
+.contact .txt {
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.contact.on .txt {
+    width: 200px;
+}
+
+.contact::before {
+    font-family: xeicon;
+    content: "\e91c";
+}
+
+.contact.on::before {
+    content: "\e921";
+}
+
+.cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    height: 0;
+    overflow: hidden;
+    transition: 0.4s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cover.on {
+    height: 100vh;
+}
+
