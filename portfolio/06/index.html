@@ -18,30 +18,43 @@
     <!-- header -->
     <header class="header">
         <nav class="nav">
-            <h1>
-                <a href="">
-                    <img src="./img/logo20190820131207_24.png" alt="">
-                </a>
-            </h1>
+            <div class="container">
+                <div>
+                    <h1>
+                        <a href="">
+                            <img src="./img/logo20190820131207_24.png" alt="Logo" class="logo" />
+                        </a>
+                    </h1>
 
-            <div class="nav_toggle">
-                <i class="bxs-frid"></i>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a href="#">New Releases</a>
+                            </li>
+                            <li>
+                                <a href="#">Men</a>
+                            </li>
+                            <li>
+                                <a href="#">Women</a>
+                            </li>
+                            <li>
+                                <a href="#">Kids</a>
+                            </li>
+                            <li>
+                                <a href="#">Categories</a>
+                            </li>
+                        </ul>
+                        <form>
+                            <div class="search-icon"><i class="xi-search"></i></div>
+                            <input type="text" class="search" placeholder="Search..." />
+                            <button class="nav-btn"><i class="xi-cart-add"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
             </div>
-
-            <div class="nav_menu">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Featured</a></li>
-                    <li><a href="">Women</a></li>
-                    <li><a href="">New</a></li>
-                    <li><a href="">Shop</a></li>
-                </ul>
-            </div>
-
-            <div class="nav_shop">
-                <i class="bx-shopping-bag"></i>
-            </div>
-        </nav>
     </header>
 
     <main>
@@ -71,7 +84,7 @@
                     <div>
                         <span>MENS-</span>
                         <h3>
-                            <span>Red Nike Jordan Max Aura 3</span>
+                            <span class="titleText">Red Nike Jordan Max Aura 3</span>
                         </h3>
                         <p class="description">
                             Lorem ipsum dolor sit ammet
@@ -229,6 +242,120 @@
                 <img src="./img/new_sneaker/offert.png" alt="">
             </div>
         </section>
+
+        <!-- 3D card -->
+        <section class="cards">
+            <div class="card js-tilt" data-tilt>
+                <div class="banner">
+                    <h2>
+                        Converse <br />
+                        All Star
+                    </h2>
+                </div>
+                <img src="./img/shoe1.png" alt="shoe" />
+                <div class="card_content">
+                    <div class="details">
+                        <h5>Product Detains</h5>
+                        <small>Color: Cherry Red</small>
+                        <small>Material: Cotton Canvas</small>
+                        <small>Product Code: 52438319</small>
+                    </div>
+                    <div class="card_sizes">
+                        <h5>Select Your Size</h5>
+                        <ul>
+                            <li class="size">37</li>
+                            <li class="size">38</li>
+                            <li class="size">39</li>
+                            <li class="size">40</li>
+                            <li class="size">41</li>
+                        </ul>
+                    </div>
+
+                    <button class="card_cart">
+                        <span>Add to Cart</span>
+                        <span>79.99$</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card js-tilt" data-tilt>
+                <div class="banner">
+                    <h2>
+                        Nike <br />
+                        LunarChange
+                    </h2>
+                </div>
+                <img src="./img/shoe2.png" alt="shoe" />
+                <div class="card_content">
+                    <div class="details">
+                        <h5>Product Detains</h5>
+                        <small>Color: Pure Black</small>
+                        <small>Material: Mesh/Synthetic</small>
+                        <small>Product Code: 24314183</small>
+                    </div>
+                    <div class="card_sizes">
+                        <h5>Select Your Size</h5>
+                        <ul>
+                            <li class="size">37</li>
+                            <li class="size">38</li>
+                            <li class="size">39</li>
+                            <li class="size">40</li>
+                            <li class="size">41</li>
+                        </ul>
+                    </div>
+
+                    <button class="card_cart">
+                        <span>Add to Cart</span>
+                        <span>178.00$</span>
+                    </button>
+                </div>
+            </div>
+            <div class="card js-tilt" data-tilt>
+                <div class="banner">
+                    <h2>
+                        Nike <br />
+                        SuperRep Go
+                    </h2>
+                </div>
+                <img src="./img/shoe3.png" alt="shoe" />
+                <div class="card_content">
+                    <div class="details">
+                        <h5>Product Detains</h5>
+                        <small>Color: Lime Green</small>
+                        <small>Material: Mesh/Synthetic</small>
+                        <small>Product Code: 31243141</small>
+                    </div>
+                    <div class="card_sizes">
+                        <h5>Select Your Size</h5>
+                        <ul>
+                            <li class="size">37</li>
+                            <li class="size">38</li>
+                            <li class="size">39</li>
+                            <li class="size">40</li>
+                            <li class="size">41</li>
+                        </ul>
+                    </div>
+
+                    <button class="card_cart">
+                        <span>Add to Cart</span>
+                        <span>118.00$</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="newsletter_container bd_grid">
+                <div>
+                    <h3>Suscribe And Get <br> 10% OFF</h3>
+                    <p>Get 10% discount for all products</p>
+                </div>
+
+                <form action="">
+                    <input type="text" placeholder="@email.com">
+                    <a href="">Subscribe</a>
+                </form>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -240,6 +367,7 @@
     <script src="./js/pixi-filters.min.js"></script>
     <script src="./js/TweenMax.min.js"></script>
     <script src="./js/mainSlider.js"></script>
+    <script src="./js/tilt.js"></script>
     <script src="./js/main.js"></script>
 </body>
 
