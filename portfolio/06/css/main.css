@@ -15,11 +15,6 @@
   z-index: 99;
 }
 
-.nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
 .nav .container>div {
   display: grid;
   grid-template-columns: 1fr 6fr;
@@ -45,12 +40,15 @@
 }
 
 .menu ul a {
-  font-size: 0.8em;
   text-transform: uppercase;
 }
 
 .nav form {
   margin-right: 2em;
+}
+
+.nav form i {
+  font-weight: 900;
 }
 
 .nav form input {
@@ -71,7 +69,7 @@
   display: inline-block;
 }
 
-.nav-btn {
+.menu form button {
   background: rgba(255, 255, 255, 0.3);
   color: #fff;
   width: 2.8rem;
@@ -84,29 +82,154 @@
   font-size: 1rem;
 }
 
-.nav-btn:hover {
+.menu form button:hover {
   background: rgba(255, 255, 255, 0.6);
 }
 
-.menu-btn {
+.nav .container .menu_btn {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1000px) {
+  .nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .nav .container>div {
+    grid-template-columns: 1fr;
+  }
+
   .menu {
-    position: fixed;
-    top: 3rem;
-    left: -100%;
-    width: 70%;
-    height: 100vh;
-    padding: 2rem;
-    background-color: #fff;
-    transition: .5s;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 0;
+    overflow: hidden;
+    transition: .7s;
+  }
+
+  .menu ul li {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .menu ul li:nth-child(1) {
+    margin-top: 1.5em;
+  }
+
+  .nav .container .menu_btn {
+    display: inline-block;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+
+  nav .container .nav-toggle {
+    height: 16em;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .header {
+    height: initial;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .header {
+    height: initial;
   }
 }
 
 
 /* home */
+.content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh - 13rem);
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (min-width: 53em) {
+
+  .content {
+    height: 890px;
+    justify-content: center;
+  }
+}
+
+.mainSlider {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /*left: 0;
+  top: 0;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  transform-origin: 50% 50%;*/
+}
+
+canvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.content nav a {
+  color: #fff;
+  text-decoration: none;
+  /*margin-right: 14px;*/
+  position: absolute;
+  top: 50vh;
+  z-index: 1;
+}
+
+.content nav a:hover,
+.content nav a:focus {
+  color: #fff;
+  outline: none;
+}
+
+.content nav span {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  display: block;
+  margin-top: 7px;
+  -moz-transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.content nav a:hover span {
+  width: 0;
+}
+
+.content nav a.next {
+  right: 10vw;
+}
+
+.content nav a.prev {
+  left: 10vw;
+}
+
+@media screen and (max-width: 53em) {
+
+  nav a {
+    top: auto;
+    bottom: 3rem;
+  }
+
+}
+
 .arrow_scroll {
   position: absolute;
   height: 4em;
@@ -163,6 +286,7 @@
 }
 
 
+/* picks */
 .featured h3 {
   position: relative;
   font-size: 2rem;
@@ -275,7 +399,8 @@
 }
 
 .reviews,
-.pricing {
+.pricing,
+.colors {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -397,7 +522,7 @@
     grid-template-columns: 1fr;
   }
 
-  .container {
+  .Picks .container {
     max-width: 700px;
   }
 
@@ -797,8 +922,8 @@
 .card:nth-child(3) .banner,
 .card:nth-child(3) .card_cart {
   background: linear-gradient(90deg,
-      #b7df5a 0%,
-      #8ab92c 100%);
+      #8da7c2 0%,
+      #516892 100%)
 }
 
 
@@ -807,7 +932,7 @@
 }
 
 .card:nth-child(3) .card_cart {
-  box-shadow: 0px 5px 15px rgba(183, 223, 90, 0.7);
+  box-shadow: 0px 5px 15px rgba(141, 167, 194, 0.7);
 }
 
 /* newsletter */
@@ -864,6 +989,8 @@
   transform: translateY(-.25rem);
 }
 
+
+
 /*  */
 @media screen and (min-width: 576px) {
   .collection__container {
@@ -898,27 +1025,6 @@
 
   .section-title::after {
     width: 76px;
-  }
-
-  .nav {
-    height: 4.5rem;
-  }
-
-  /* .menu {
-    margin-left: auto;
-  } */
-
-  .menu ul {
-    display: flex;
-  }
-
-  .menu ul li {
-    margin-left: 3rem;
-    margin-bottom: 0;
-  }
-
-  .nav_toggle {
-    display: none;
   }
 
   .home__container {
