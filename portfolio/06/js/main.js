@@ -116,8 +116,8 @@ const names = [
 
 const descriptions = [
     ["나이키 조던 맥스 아우라 3 남성 운동화를 신고 걸으면서 도시의 도시 거리로 역사의 한 조각을 가져오세요. 풍부한 요르단 유산에 영감을 받은 이 모델은 농구화의 에너지와 클래식 스타일에 대한 인식을 바꾸는 룩을 가지고 있습니다."],
-    ["Nike Air Max 95 men's sneakers move you with the strength and fluidity inspired by the anatomy of the human body. The central sole forms the basis of these sneakers, while the structured side panels give a solid and stable construction. Flexible incisions in the sole allow your feet to move naturally."],
-    ["Jordan Delta 2 SP men's basketball shoes offer a fresh and fearless approach to the characteristics you want: durability, comfort and the attitude of the Jordan brand. The first model of Delta 2 sneakers, with the same idea, received redesigned lines and modified components."]
+    ["나이키 에어 맥스 95 남성 운동화는 인체 해부학에서 영감을 받은 힘과 유동성으로 여러분을 감동시킵니다. 중앙 밑창은 이러한 운동화의 기초가 되는 반면, 구조화된 측면 패널은 견고하고 안정적인 구조를 제공합니다. 밑창의 유연한 절개로 발이 자연스럽게 움직일 수 있습니다."],
+    ["조던 델타 2 SP 남성용 농구화는 내구성, 편안함, 조던 브랜드의 애티튜드 등 원하는 특성에 신선하고 대담한 접근 방식을 제공합니다. 같은 아이디어로 Delta 2 운동화의 첫 번째 모델은 재설계된 라인과 수정된 구성 요소를 받았습니다."]
 ];
 
 const ratings = [4, 5, 3];
@@ -290,14 +290,14 @@ menuBtn.addEventListener("click", () => {
 });
 
 // play video
-$(document).ready(function () {
-    $('.popup-youtube').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 160,
-        preloader: false,
+// $(document).ready(function () {
+//     $('.popup-youtube').magnificPopup({
+//         disableOn: 700,
+//         type: 'iframe',
+//         mainClass: 'mfp-fade',
+//         removalDelay: 160,
+//         preloader: false,
 
-        fixedContentPos: false
-    });
-});
+//         fixedContentPos: false
+//     });
+// });
