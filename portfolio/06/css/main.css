@@ -129,7 +129,7 @@
   }
 
   nav .container .nav-toggle {
-    height: 16em;
+    height: 18em;
   }
 }
 
@@ -237,7 +237,7 @@ canvas {
 .arrow_scroll {
   position: absolute;
   height: 4em;
-  bottom: 1rem;
+  bottom: 5rem;
   text-align: center;
 }
 
@@ -304,6 +304,11 @@ canvas {
   padding: 1em 2em;
   max-width: 1350px;
   margin: 0 auto;
+}
+
+.description {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding-bottom: 20px;
 }
 
 .Picks {
