@@ -281,6 +281,7 @@ function onResize() {
 }
 // 
 
+// animation
 var then = 0, multipliers = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], incrementors = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
 function draw(f) {
     // .1, 0, .2, 1
