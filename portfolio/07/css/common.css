@@ -102,10 +102,10 @@ button {
     vertical-align: middle;
 }
 
-b,
+/* b,
 strong {
     font-weight: normal;
-}
+} */
 
 address,
 em,

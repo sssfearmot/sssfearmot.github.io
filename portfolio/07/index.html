@@ -31,36 +31,36 @@
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
+        </div>
+
+        <!-- search -->
+        <div class="eo">
+            <div class="dp">
+                <div class="bq">
+                    <img src="./img/search.svg" alt="">
+                    <input type="text" autocomplete="off" placeholder="작품명 검색">
+                </div>
+                <p></p>
+                <div class="df">
+                    <button class="noti">
+                        <img src="./img/notification.svg" alt="">
+                    </button>
+                    <button class="qr">
+                        <img src="./img/qr-code.svg" alt="">
+                        <span>NFT 지갑</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
 
     <!-- main -->
     <main>
-        <!-- search -->
-        <section>
-            <div class="eo">
-                <div class="dp">
-                    <div class="bq">
-                        <img src="./img/search.svg" alt="">
-                        <input type="text" autocomplete="off" placeholder="작품명 검색">
-                    </div>
-                    <p></p>
-                    <div class="df">
-                        <button class="noti">
-                            <img src="./img/notification.svg" alt="">
-                        </button>
-                        <button class="qr">
-                            <img src="./img/qr-code.svg" alt="">
-                            <span>NFT 지갑</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
 
         <!-- webGL -->
         <section>
             <canvas id="canvas"></canvas>
-            <div class="cavas_body">
+            <div class="canvas_body">
                 <div>
                     <div>
                         <p>
@@ -68,10 +68,10 @@
                             unde cupiditate. Quis ex error numquam itaque repudiandae.
                         </p>
                         <span class="bar"></span>
-                        <h2>Buy NFTS</h2>
+                        <strong>Buy NFTS</strong>
                     </div>
                     <div>
-                        <h2>Sell NFTS</h2>
+                        <strong>Sell NFTS</strong>
                         <span class="bar"></span>
                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora delectus praesentium quis,
                             corporis laboriosam mollitia rem doloremque totam aspernatur molestias.</p>
@@ -88,7 +88,6 @@
                 </div>
                 <img src="./img/grid_top_bottom.png" alt="" class="grid_img">
             </div>
-            <!-- <p class="p">Click and drag to rotate the scene, mousewheel to zoom</p> -->
         </section>
 
         <!-- services -->
@@ -135,7 +134,7 @@
                 </div>
                 <div class="cards">
                     <div class="card">
-                        <img class="art_img" src="./img/crystal1.jpg" alt="">
+                        <img class="art_img" src="./img/blue.png" alt="">
                         <div class="light"></div>
                         <h3 class="art_title">Lorem, ipsum dolor.</h3>
                         <div class="favourites">
@@ -167,7 +166,7 @@
                     </div>
 
                     <div class="card">
-                        <img class="art_img" src="./img/crystal2.jpg" alt="">
+                        <img class="art_img" src="./img/yellow.png" alt="">
                         <div class="light"></div>
                         <h3 class="art_title">Lorem, ipsum dolor.</h3>
                         <div class="favourites">
@@ -199,7 +198,7 @@
                     </div>
 
                     <div class="card">
-                        <img class="art_img" src="./img/crystal3.jpg" alt="">
+                        <img class="art_img" src="./img/green.png" alt="">
                         <div class="light"></div>
                         <h3 class="art_title">Lorem, ipsum dolor.</h3>
                         <div class="favourites">
@@ -276,101 +275,108 @@
 
         <!-- artists -->
         <section>
-            <div class="heading">
-                <h2>Lorem ipsum dolor sit amet.</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias iusto inventore quam illo a
-                    impedit praesentium cumque nobis et similique commodi, distinctio assumenda reiciendis, delectus
-                    doloremque dolores quod omnis!
-                </p>
-            </div>
-            <div class="cards">
-                <div class="card">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>
-                            5.0
-                        </span>
+            <div class="container">
+                <div class="artists">
+                    <div class="heading">
+                        <h2>Lorem ipsum dolor sit amet.</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo alias iusto inventore
+                            quam
+                            illo a
+                            impedit praesentium cumque nobis et similique commodi, distinctio assumenda reiciendis,
+                            delectus
+                            doloremque dolores quod omnis!
+                        </p>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <button>
-                        Lorem, ipsum.
-                    </button>
-                </div>
+                    <div class="cards">
+                        <div class="card">
+                            <img class="bg_img" src="./img/smoke1.jpg" alt="">
+                            <img class="profile_img" src="./img/user1.png" alt="">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>
+                                    5.0
+                                </span>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <button>
+                                Lorem, ipsum.
+                            </button>
+                        </div>
 
-                <div class="card">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>
-                            5.0
-                        </span>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <button>
-                        Lorem, ipsum.
-                    </button>
-                </div>
+                        <div class="card">
+                            <img class="bg_img" src="./img/smoke2.jpg" alt="">
+                            <img class="profile_img" src="./img/user2.png" alt="">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>
+                                    5.0
+                                </span>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <button>
+                                Lorem, ipsum.
+                            </button>
+                        </div>
 
-                <div class="card">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>
-                            5.0
-                        </span>
-                    </div>
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <button>
-                        Lorem, ipsum.
-                    </button>
-                </div>
+                        <div class="card">
+                            <img class="bg_img" src="./img/smoke3.jpg" alt="">
+                            <img class="profile_img" src="./img/user3.png" alt="">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>
+                                    5.0
+                                </span>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <button>
+                                Lorem, ipsum.
+                            </button>
+                        </div>
 
-                <div class="card">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <h3>Lorem, ipsum dolor.</h3>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <span>
-                            5.0
-                        </span>
+                        <div class="card">
+                            <img class="bg_img" src="./img/smoke4.jpg" alt="">
+                            <img class="profile_img" src="./img/user4.png" alt="">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>
+                                    5.0
+                                </span>
+                            </div>
+                            <p>
+                                Lorem ipsum dolor sit amet.
+                            </p>
+                            <button>
+                                Lorem, ipsum.
+                            </button>
+                        </div>
                     </div>
-                    <p>
-                        Lorem ipsum dolor sit amet.
-                    </p>
-                    <button>
-                        Lorem, ipsum.
-                    </button>
                 </div>
             </div>
         </section>
