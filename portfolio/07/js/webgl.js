@@ -259,7 +259,7 @@ function canvasResize() {
     mat4.perspective(projection, 45 * Math.PI / 180, screenRatio, 0.1, 1000);
 
     // gl.bindTexture(gl.TEXTURE_2D, FBOsoffscreen.texture);
-    gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, innerWidth, innerHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+    // gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, innerWidth, innerHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
     gl.bindTexture(gl.TEXTURE_2D, null);
 
     gl.bindRenderbuffer(gl.RENDERBUFFER, FBOsoffscreen.colorRenderBuffer);
