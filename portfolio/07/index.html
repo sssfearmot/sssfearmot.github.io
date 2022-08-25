@@ -15,8 +15,10 @@
     <!-- header -->
     <header>
         <div class="container">
-            <nav>
-                <a href="index.html" class="brand">NFT</a>
+            <nav class="nav">
+                <h1>
+                    <a href="index.html">NFT</a>
+                </h1>
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Artworks</a></li>
@@ -47,18 +49,81 @@
                     </button>
                     <button class="qr">
                         <img src="./img/qr-code.svg" alt="">
+                        <img src="./img/qr-code-active.svg" alt="">
                         <span>NFT 지갑</span>
                     </button>
                 </div>
             </div>
         </div>
+
+        <!-- bottom header -->
+        <div class="bottom_header">
+            <nav class="mobileWrapper">
+                <div class="mobileContainer">
+                    <div class="mobileGrid">
+                        <div class="mobileLink">
+                            <a href="">
+                                <div class="mobileImg">
+                                    <img src="./img/house-solid.svg" alt="">
+                                </div>
+                                <div>홈</div>
+                            </a>
+                        </div>
+
+                        <div class="mobileLink">
+                            <a href="">
+                                <div class="mobileImg">
+                                    <img src="./img/square-check-solid.svg" alt="">
+                                </div>
+                                <div>NFT</div>
+                            </a>
+                        </div>
+
+                        <div class="mobileLink">
+                            <a href="">
+                                <div class="mobileImg">
+                                    <img src="./img/building-solid.svg" alt="">
+                                </div>
+                                <div>NFT타운</div>
+                            </a>
+                        </div>
+
+                        <div class="mobileLink">
+                            <a href="">
+                                <div class="mobileImg">
+                                    <img src="./img/people-arrows-solid.svg" alt="">
+                                </div>
+                                <div>거래소</div>
+                            </a>
+                        </div>
+
+                        <div class="mobileLink">
+                            <a href="">
+                                <div class="mobileImg">
+                                    <img src="./img/money-bill-transfer-solid.svg" alt="">
+                                </div>
+                                <div>입출금</div>
+                            </a>
+                        </div>
+
+                        <div class="mobileLink">
+                            <a href="">
+                                <div class="mobileImg">
+                                    <img src="./img/bars-solid.svg" alt="">
+                                </div>
+                                <div>더보기</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <!-- main -->
     <main>
-
         <!-- webGL -->
-        <section>
+        <section class="webGL">
             <canvas id="canvas"></canvas>
             <div class="canvas_body">
                 <div>
@@ -260,7 +325,7 @@
                             <div>
                                 <small>lorem</small>
                                 <h3>1305K</h3>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ab?</p>
+                                <p>Lorem ipsum dolor sit amet.</p>
                             </div>
                             <div>
                                 <small>lorem</small>
@@ -381,9 +446,119 @@
             </div>
         </section>
 
+        <section class="trial">
+            <div>
+                <h2>Lorem, ipsum dolor.</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. A quia repudiandae tempore incidunt
+                    magnam rerum eos fugiat aliquid eum quis.
+                </p>
+                <a href="" class="btn btn-primary">
+                    Join us now
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="col1">
+                <a href="#" class="brand">NFT</a>
+                <ul class="media_icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-tumblr"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col2">
+                <ul class="menu">
+                    <li>
+                        <a href="#">공지사항</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">1:1 문의하기</a>
+                    </li>
+                    <li>
+                        <a href="#">이용약관</a>
+                    </li>
+                    <li>
+                        <a href="#">개인정보처리방침</a>
+                    </li>
+                    <li>
+                        <a href="#">투자자보호센터</a>
+                    </li>
+                </ul>
+                <p>
+                    NFT 페이지 내 노출되는 모든 콘텐츠 정보는 NFT 발행인이 제공하고 있으며, 투자 또는 거래의 권유를 목적으로
+                    하지 않습니다. 해당 정보는 서비스 이용을 위한 보조 자료로 참고해 주시기 바랍니다.
+                    두나무(주)는 NFT 거래 중개자이며, NFT 거래 당사자가 아닙니다. NFT 거래에 관한 일체의 책임은 판매자가 부담합니다.
+                </p>
+            </div>
+            <div class="col3">
+                <p>Subscribe to our newsletter</p>
+                <form>
+                    <div class="input_wrap">
+                        <input type="email" placeholder="email" />
+                        <button type="submit">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="service_icons">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-amazon-pay"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-mastercard"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-apple-pay"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-stripe"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-cc-visa"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
     </footer>
 
