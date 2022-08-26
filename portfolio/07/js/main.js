@@ -11,12 +11,10 @@ var delta = 5;
 var fixBox = document.querySelector('.bottom_header');
 var fixBoxHeight = fixBox.offsetHeight;
 var didScroll;
-//스크롤 이벤트 
 window.onscroll = function (e) {
     didScroll = true;
 };
 
-//0.25초마다 스크롤 여부 체크하여 스크롤 중이면 hasScrolled() 호출
 setInterval(function () {
     if (didScroll) {
         hasScrolled();
