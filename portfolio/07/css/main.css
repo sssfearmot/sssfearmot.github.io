@@ -623,7 +623,7 @@ h2:not(.explore h2, .trial h2, footer h2)::before,
 }
 
 .grid div {
-    background: url(/img/grid.gif) fixed;
+    background: url(../img/grid.gif) fixed;
     background-size: cover;
     background-position: 100%;
     border-radius: 10px;
@@ -814,7 +814,7 @@ h2:not(.explore h2, .trial h2, footer h2)::before,
 
 /* trial */
 .trial {
-    background: url(/img/background.jpg) center no-repeat;
+    background: url(../img/background.jpg) center no-repeat;
     background-size: cover;
     padding: 6rem 1rem;
 }
