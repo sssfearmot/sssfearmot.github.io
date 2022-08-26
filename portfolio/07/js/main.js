@@ -28,11 +28,9 @@ function hasScrolled() {
         return;
     }
     if (nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight) {
-        //Scroll down
         fixBox.classList.add('run');
     } else {
         if (nowScrollTop + window.innerHeight < document.body.offsetHeight) {
-            //Scroll up
             fixBox.classList.remove('run');
         }
     }
