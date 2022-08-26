@@ -262,8 +262,8 @@ function canvasResize() {
     // gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, innerWidth, innerHeight, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
     gl.bindTexture(gl.TEXTURE_2D, null);
 
-    gl.bindRenderbuffer(gl.RENDERBUFFER, FBOsoffscreen.colorRenderBuffer);
-    gl.renderbufferStorageMultisample(gl.RENDERBUFFER, 4, gl.RGBA8, innerWidth, innerHeight);
+    // gl.bindRenderbuffer(gl.RENDERBUFFER, FBOsoffscreen.colorRenderBuffer);
+    // gl.renderbufferStorageMultisample(gl.RENDERBUFFER, 4, gl.RGBA8, innerWidth, innerHeight);
 
     if (screenRatio < 1.2 && innerWidth < 850) {
         window.cameraZ = 65;

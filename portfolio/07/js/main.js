@@ -31,19 +31,12 @@ function hasScrolled() {
     }
     if (nowScrollTop > lastScrollTop && nowScrollTop > fixBoxHeight) {
         //Scroll down
-        fixBox.classList.remove('run');
+        fixBox.classList.add('run');
     } else {
         if (nowScrollTop + window.innerHeight < document.body.offsetHeight) {
             //Scroll up
-            fixBox.classList.add('run');
+            fixBox.classList.remove('run');
         }
     }
     lastScrollTop = nowScrollTop;
 }
-
-const menu = document.querySelector('.menu');
-const menuBtn = document.querySelector('.menu-btn');
-
-menuBtn.addEventListener('click', () => {
-    menu.classList.toggle('menu-open');
-});
