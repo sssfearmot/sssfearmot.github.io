@@ -90,25 +90,39 @@
 
     <!-- main -->
     <main>
-        <!-- <section>
-            <div class="card">
-                <div class="details">
-                    <img src="https://i.ibb.co/MSX3PK1/logo.png" alt="">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolorem error quis aliquid
-                        perferendis soluta consequatur cumque harum, adipisci ipsum.
-                    </p>
-                    <a href="">Watch Now</a>
-                    <h5>IMDb 8.2 <span>/10</span></h5>
+        <section class="slider_main">
+            <div id="slider">
+                <div class="slider-inner">
+                    <div id="slider-content">
+                        <div class="meta">Species</div>
+                        <h2 id="slide-title">Amur <br>Leopard</h2>
+                        <span data-slide-title="0">Amur <br>Leopard</span>
+                        <span data-slide-title="1">Asiatic <br>Lion</span>
+                        <span data-slide-title="2">Siberian <br>Tiger</span>
+                        <span data-slide-title="3">Brown <br>Bear</span>
+                        <div class="meta">Status</div>
+                        <div id="slide-status">Critically Endangered</div>
+                        <span data-slide-status="0">Critically Endangered</span>
+                        <span data-slide-status="1">Endangered</span>
+                        <span data-slide-status="2">Endangered</span>
+                        <span data-slide-status="3">Least Concern</span>
+                    </div>
                 </div>
-                <div class="image_container">
-                    <img src="https://i.ibb.co/bQXh8vZ/guard.png" alt="">
-                </div>
-                <div class="card_footer">
-                    <p>&copy; 2021, HD Movies Online. Inc</p>
+
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/leopard2.jpg" />
+                <!-- <img src="./img/background.png" /> -->
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/lion2.jpg" />
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/tiger2.jpg" />
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/123024/bear2.jpg" />
+
+                <div id="pagination">
+                    <button class="active" data-slide="0"></button>
+                    <button data-slide="1"></button>
+                    <button data-slide="2"></button>
+                    <button data-slide="3"></button>
                 </div>
             </div>
-        </section> -->
+        </section>
     </main>
 
     <!-- footer -->
@@ -116,7 +130,19 @@
 
     </footer>
 
+    <script src="./js/three.min.js"></script>
+    <script src="./js/TweenMax.min.js"></script>
+    <script src="./js/imagesLoaded.pkgd.min.js"></script>
     <script src="./js/main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-40525870-5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-40525870-5');
+    </script>
 </body>
 
 </html>
