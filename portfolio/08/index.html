@@ -438,66 +438,236 @@
 
         <!-- store -->
         <section class="product-slider">
-            <img src="./img/0310040001492.jpg" class="logo" />
-            <div class="card">
-                <div class="panel-1"></div>
-                <div class="panel-2"></div>
-                <div class="product">
-                    <div class="product-image">
-                        <img src="./img/01.27721294.1.jpg" alt="product" />
+            <div class="product_container">
+                <div class="product_header">
+                    <h2>온라인 스토어</h2>
+                    <p>오징어 게임</p>
+                </div>
+                <div class="product_episodes">
+                    <div class="product_season">
+                        <div class="product_meta">
+                            <strong>출시일: 2021.06.10</strong>
+                            <p>오리지널 콘텐츠 관련 굿즈(Goods)를 판매하는 전용 온라인 스토어인 ‘Netflix.shop(넷플릭스닷숍)’을 공식적으로 론칭했다.</p>
+                        </div>
                     </div>
-                    <div class="product-details">
-                        <div>
-                            <h1 class="product-name">Stoormtrooper Helmet</h1>
-                            <h1 class="price">
-                                $<span class="product-price">1.299</span>,<sup>99</sup>
-                            </h1>
-                            <div class="details">
-                                <div class="options">
-                                    <b class="product-option-title">Helmet Size</b>
-                                    <ul class="options-list">
-                                        <li class="option option-active">S</li>
-                                        <li class="option">M</li>
-                                        <li class="option">L</li>
-                                        <li class="option">XL</li>
-                                    </ul>
-                                </div>
-                                <div class="specs">
-                                    <div class="progress-bar">
-                                        <div class="progress-circle">
-                                            <div class="progress-content">
-                                                <h2 class="progText">80</h2>
+                    <div class="card">
+                        <div class="panel-1"></div>
+                        <div class="panel-2"></div>
+                        <div class="product">
+                            <div class="product-image">
+                                <img src="/img/store/store1.png" alt="store" />
+                            </div>
+                            <div class="product-details">
+                                <div>
+                                    <h1 class="product-name">오징어 게임 아레나 화이트 셔츠</h1>
+                                    <h1 class="price">
+                                        <span class="product-price">47,000</span>원
+                                    </h1>
+                                    <div class="details">
+                                        <div class="options">
+                                            <b class="product-option-title">Size</b>
+                                            <ul class="options-list">
+                                                <li class="option option-active">S</li>
+                                                <li class="option">M</li>
+                                                <li class="option">L</li>
+                                                <li class="option">XL</li>
+                                            </ul>
+                                        </div>
+                                        <div class="specs">
+                                            <div class="progress-bar">
+                                                <div class="progress-circle">
+                                                    <div class="progress-content">
+                                                        <h2 class="progText">80</h2>
+                                                    </div>
+                                                    <div class="progress"></div>
+                                                </div>
                                             </div>
-                                            <div class="progress"></div>
+                                            <small><b>인기도</b></small>
                                         </div>
                                     </div>
-                                    <small><b>Durability</b></small>
+                                    <div class="buttons">
+                                        <button type="button" class="btn-primary">
+                                            <b>Shop Now</b>
+                                        </button>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="buttons">
-                                <button type="button" class="btn-primary">
-                                    <b>Add To Cart</b>
-                                </button>
-                                <button type="button" class="btn-secondary">
-                                    <i class="fas fa-heart"></i>
-                                    Add To Wishlist
-                                </button>
-                            </div>
+                        </div>
+                        <div class="arrow-left">
+                            <i class="fas fa-arrow-left"></i>
+                        </div>
+                        <div class="arrow-right">
+                            <i class="fas fa-arrow-right"></i>
                         </div>
                     </div>
                 </div>
-                <div class="arrow-left">
-                    <i class="fas fa-arrow-left"></i>
+        </section>
+
+        <!-- 3D card -->
+        <section>
+            <div class="container">
+                <audio loop id="player">
+                    <source src="./img/3d/round-6.mp3" type="audio/mpeg">
+                </audio>
+
+                <video autoplay muted loop id="squid">
+                    <source src="./img/3d/squid.webm" type="video/mp4">
+                </video>
+
+                <div class="card_controls">
+                    <button class="play" onclick="document.getElementById('player').play()"></button>
+                    <button class="mute"
+                        onclick="document.getElementById('player').muted=!document.getElementById('player').muted"></button>
                 </div>
-                <div class="arrow-right">
-                    <i class="fas fa-arrow-right"></i>
+
+                <div class="card_container">
+                    <div class="front_card ">
+                        <div class="circle"></div>
+                        <div class="triangle"></div>
+                        <div class="square"></div>
+                    </div>
+                    <div class="back">
+                        <div class="number">8650 4006</div>
+                        <div class="icon">
+                            <img src="./img/3d/squid.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
+
+
         </section>
     </main>
 
     <!-- footer -->
-    <footer>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="col1">
+                    <a href="#" class="brand">
+                        <img src="./img/pngwing.com (2).png" alt="">
+                    </a>
+                </div>
+                <div class="col2">
+                    <ul class="footer_menu">
+                        <li>
+                            <h4>About</h4>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="#">Customers</a>
+                        </li>
+                        <li>
+                            <a href="#">Carrers</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li>
+                            <h4>Resources</h4>
+                        </li>
+                        <li>
+                            <a href="#">Docs</a>
+                        </li>
+                        <li>
+                            <a href="#">Block</a>
+                        </li>
+                        <li>
+                            <a href="#">eBooks</a>
+                        </li>
+                        <li>
+                            <a href="#">Webinars</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li>
+                            <h4>Contact</h4>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Sales</a>
+                        </li>
+                        <li>
+                            <a href="#">Advertise</a>
+                        </li>
+                        <li>
+                            <a href="#">Location</a>
+                        </li>
+                    </ul>
+                    <ul class="footer_menu">
+                        <li>
+                            <h4>Netflix</h4>
+                        </li>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Sales</a>
+                        </li>
+                        <li>
+                            <a href="#">Advertise</a>
+                        </li>
+                        <li>
+                            <a href="#">Location</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col3">
+                    <p>Subscribe to our newsletter</p>
+                    <form>
+                        <div class="input-wrap">
+                            <input type="email" placeholder="example@gmail.com" />
+                            <button type="submit">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p>
+                        © 2022 Netflix, Inc.
+                    </p>
+                    <ul class="service-icons">
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-tumblr"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
     </footer>
 

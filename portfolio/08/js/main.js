@@ -365,36 +365,41 @@ document.querySelector('.popup_video span').onclick = () => {
 // store
 const data = [
     [
-        "product1",
-        "product2",
-        "product3",
+        "store1",
+        "store2",
+        "store3",
+        "store4",
+        "store5",
     ],
     [
-        "Stormtrooper Helmet",
-        "Imperial Tie Fighter",
-        "The Death Star",
+        "오징어 게임 아레나 화이트 셔츠",
+        "오징어 게임 커스텀 쵸이스 셔츠",
+        "오징어 게임 아이콘 블랙 후드",
+        "오징어 게임 플레이어 넘버 커스텀 셔츠",
+        "오징어 게임 플레이어 넘버 패치 화이트 커스텀 셔츠",
     ],
     [
-        "1.299",
-        "9.999",
-        "99.999",
+        "47,000",
+        "54,000",
+        "67,000",
+        "54,000",
+        "54,000",
     ],
     [
-        "Helmet Size",
-        "Engine Unit",
-        "Armament",
+        "Size",
+        "Size",
+        "Size",
+        "Size",
+        "Size",
     ],
     [
         ["S", "M", "L", "XL"],
-        ["P-S4 Twin", "P-W401"],
-        ["Superlaser", "Turbolaser"],
+        ["S", "M", "L", "XL"],
+        ["S", "M", "L", "XL"],
+        ["S", "M", "L", "XL"],
+        ["S", "M", "L", "XL"],
     ],
-    [80, 25, 100],
-    [
-        "background1",
-        "background2",
-        "background3",
-    ],
+    [80, 76, 100, 65, 91]
 ];
 
 /*==== Progress Bar ====*/
@@ -476,7 +481,7 @@ let li;
 //The slider function
 function storeSlider(id) {
     //Change the product image
-    img.src = "img/" + data[0][id] + ".png";
+    img.src = "img/store/" + data[0][id] + ".png";
     //Add product image fade animation
     img.classList.add('fade-in');
     /*Remove animation after it's done, 
@@ -512,7 +517,7 @@ function storeSlider(id) {
         optionsList.appendChild(li);
     }
     //Change the background image
-    bg.style.backgroundImage = "url(img/" + data[6][id] + ".jpg)";
+    // bg.style.backgroundImage = "url(img/" + data[6][id] + ".jpg)";
     /*Run the progress bar function 
     and insert the new percentage*/
     progressBar(id);
@@ -543,3 +548,57 @@ arrRight.addEventListener('click', () => {
     //Run the slider function
     storeSlider(id);
 });
+
+
+// 3D card
+const container = document.querySelector(".card_container")
+const card = document.querySelector(".front_card")
+const back = document.querySelector(".back")
+const number = document.querySelector(".number")
+let flip = false
+
+container.addEventListener("mousemove", (e) => {
+    if (!flip) {
+        let xAxis = (window.innerWidth / 2 - e.pageX) / 25
+        let yAxis = (window.innerHeight / 2 - e.pageY) / 25
+        card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+        back.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`
+    }
+})
+
+container.addEventListener("mouseenter", (e) => {
+    card.style.transition = 'none'
+    back.style.transition = 'none'
+})
+
+card.addEventListener("mouseenter", (e) => {
+    card.style.transition = 'none'
+    back.style.transition = 'none'
+})
+
+container.addEventListener("mouseleave", (e) => {
+    card.style.transition = 'all 0.5s ease'
+    card.style.transform = `rotateY(0deg) rotateX(0deg)`
+    back.style.transition = 'all 0.5s ease'
+    back.style.transform = `rotateY(0deg) rotateX(0deg)`
+    back.style.zIndex = '-1'
+    flip = false
+})
+
+let a = 1
+card.addEventListener('click', (e) => {
+    card.style.transition = 'all 0.4s ease'
+    card.style.transform = 'rotateY(180deg)'
+    back.style.transition = 'all 0.4s ease'
+    back.style.transform = 'rotateY(180deg)'
+    back.style.zIndex = '2'
+    flip = true
+})
+
+back.addEventListener('click', (e) => {
+    card.style.transform = 'rotateY(0deg)'
+    back.style.transform = 'rotateY(0deg)'
+    back.style.zIndex = '-1'
+    flip = false
+})
+
