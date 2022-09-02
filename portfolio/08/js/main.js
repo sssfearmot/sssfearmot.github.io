@@ -162,8 +162,8 @@ const displacementSlider = function (opts) {
                         }
                     });
 
-                    let slideTitleEl = document.getElementById('slide-title');
-                    let slideStatusEl = document.getElementById('slide-status');
+                    let slideTitleEl = document.getElementById('slide_title');
+                    let slideStatusEl = document.getElementById('slide_status');
                     let nextSlideTitle = document.querySelectorAll(`[data-slide-title="${slideId}"]`)[0].innerHTML;
                     let nextSlideStatus = document.querySelectorAll(`[data-slide-status="${slideId}"]`)[0].innerHTML;
 
@@ -253,8 +253,8 @@ window.addEventListener('scroll', scrollHeader)
 // the characters
 const items = document.querySelectorAll('.item'),
     controls = document.querySelectorAll('.control'),
-    headerItems = document.querySelectorAll('.item-header'),
-    descriptionItems = document.querySelectorAll('.item-description'),
+    headerItems = document.querySelectorAll('.item_header'),
+    descriptionItems = document.querySelectorAll('.item_description'),
     activeDelay = .76,
     interval = 5000;
 
@@ -447,8 +447,8 @@ progressBar(0);
 
 /*=== Options ===*/
 //Get elements from the DOM
-const optionsList = document.querySelector('.options-list');
-const options = document.querySelectorAll('.options-list > li');
+const optionsList = document.querySelector('.options_list');
+const options = document.querySelectorAll('.options_list > li');
 
 //Bind click handler to element that is added later/dynamically
 optionsList.addEventListener('click', function (e) {
@@ -467,11 +467,11 @@ optionsList.addEventListener('click', function (e) {
 //Get elements from the DOM
 const arrLeft = document.querySelector('.arrow-left');
 const arrRight = document.querySelector('.arrow-right');
-const img = document.querySelector('.product-image img');
-const name = document.querySelector('.product-name');
-const price = document.querySelector('.product-price');
-const optionTitle = document.querySelector('.product-option-title');
-const bg = document.querySelector('.panel-1');
+const img = document.querySelector('.product_image img');
+const name = document.querySelector('.product_name');
+const price = document.querySelector('.product_price');
+const optionTitle = document.querySelector('.product_option_title');
+const bg = document.querySelector('.panel_1');
 
 //Slider ID
 let id = 0;
@@ -602,3 +602,14 @@ back.addEventListener('click', (e) => {
     flip = false
 })
 
+
+// popup shop
+document.querySelectorAll('.btn-primary').forEach(vid => {
+    vid.onclick = () => {
+        document.querySelector('.popups_container').style.display = 'block';
+    }
+});
+
+document.querySelector('.popup_content span').onclick = () => {
+    document.querySelector('.popups_container').style.display = 'none';
+}
