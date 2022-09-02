@@ -319,15 +319,15 @@ video {
 
 #slider_content #slide_status {
     margin-top: 10px;
-    font-family: "acta-display", serif;
+    font-family: 'Noto Sans KR',"acta-display", serif;
     font-weight: 400;
-    font-size: 18px;
+    /* font-size: 18px; */
     color: white;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 559px) {
     #slider_content #slide_status {
-        font-size: 34px;
+        font-size: 18px;
     }
 }
 
