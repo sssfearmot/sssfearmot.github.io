@@ -1230,10 +1230,6 @@ video {
 }
 
 .panel_1 {
-    /* background: url(../img/Squid-Game-Black-Logo-PNG.png); */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
     right: 0;
     width: 80%;
     height: 90%;
@@ -1254,7 +1250,6 @@ video {
 
 .panel_2 {
     background: #cc2c42;
-    /* background: url(../img/squid-loader.gif) center; */
     left: 0;
     width: 50%;
     height: 100%;
