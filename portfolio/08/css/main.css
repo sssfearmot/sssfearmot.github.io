@@ -42,7 +42,7 @@ section {
     color: #fff;
 }
 
-.heard_brand {
+.brand {
     width: 80px;
     font-size: 1.6rem;
 }
@@ -319,7 +319,7 @@ video {
 
 #slider_content #slide_status {
     margin-top: 10px;
-    font-family: 'Noto Sans KR',"acta-display", serif;
+    font-family: 'Noto Sans KR', "acta-display", serif;
     font-weight: 400;
     /* font-size: 18px; */
     color: white;
