@@ -452,7 +452,7 @@ let id = 0;
 let li;
 
 function storeSlider(id) {
-    img.src = "img/store/" + data[0][id] + ".png";
+    img.src = "./img/store/" + data[0][id] + ".png";
     img.classList.add('fade-in');
     setTimeout(() => {
         img.classList.remove('fade-in');
